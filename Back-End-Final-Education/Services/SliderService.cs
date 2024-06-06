@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection.Metadata;
 using Back_End_Final_Education.Data;
 using Back_End_Final_Education.Models;
 using Back_End_Final_Education.Services.Interfaces;
@@ -16,6 +17,18 @@ namespace Back_End_Final_Education.Services
             _context = context;
 		}
 
+        public async Task CreateAsync(Slider slider)
+        {
+            await _context.AddAsync(slider);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task DeleteAsync(Slider slider)
+        {
+            _context.Sliders.Remove(slider);
+            await _context.SaveChangesAsync();
+        }
+
         public async Task<SliderDetailVM> DetailAsync(int id)
         {
             Slider slider= await _context.Sliders.Where(m => m.Id == id).FirstOrDefaultAsync();
@@ -29,6 +42,11 @@ namespace Back_End_Final_Education.Services
                 CreatedDate = slider.CreatedDate.ToString("MM.dd.yyyy")
 
             };
+        }
+
+        public async Task<bool> ExistAsync(string name)
+        {
+            return await _context.Sliders.AnyAsync(m => m.Title.Trim() == name.Trim());
         }
 
         public async Task<IEnumerable<Slider>> GetAllAsync()

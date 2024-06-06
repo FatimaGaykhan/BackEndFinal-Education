@@ -10,6 +10,9 @@ namespace Back_End_Final_Education.Services.Interfaces
         Task<IEnumerable<SliderVM>> GetAllForAdminAsync();
         Task<Slider> GetByIdAsync(int id);
         Task<SliderDetailVM> DetailAsync(int id);
+        Task<bool> ExistAsync(string name);
+        Task CreateAsync(Slider slider);
+        Task DeleteAsync(Slider slider);
     }
 }
 
