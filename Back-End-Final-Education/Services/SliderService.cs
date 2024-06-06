@@ -44,9 +44,22 @@ namespace Back_End_Final_Education.Services
             };
         }
 
+        public async Task EditAsync(Slider slider, SliderEditVM request)
+        {
+            slider.Title = request.Title;
+            slider.Subject = request.Subject;
+            slider.Description = request.Description;
+            await _context.SaveChangesAsync();
+        }
+
         public async Task<bool> ExistAsync(string name)
         {
             return await _context.Sliders.AnyAsync(m => m.Title.Trim() == name.Trim());
+        }
+
+        public async Task<bool> ExistExceptByIdAsync(int id, string title)
+        {
+            return await _context.Sliders.AnyAsync(m => m.Title == title && m.Id != id);
         }
 
         public async Task<IEnumerable<Slider>> GetAllAsync()

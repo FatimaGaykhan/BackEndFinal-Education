@@ -13,6 +13,8 @@ namespace Back_End_Final_Education.Services.Interfaces
         Task<bool> ExistAsync(string name);
         Task CreateAsync(Slider slider);
         Task DeleteAsync(Slider slider);
+        Task<bool> ExistExceptByIdAsync(int id, string title);
+        Task EditAsync(Slider slider, SliderEditVM request);
     }
 }
 

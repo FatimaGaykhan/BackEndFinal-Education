@@ -5,20 +5,22 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Back-End-Final-Education/Areas/Admin/Views/Shared/_Layout.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Back-End-Final-Education/Areas/Admin/Controllers/SliderController.cs">
     <Files>
-      <File FileName="Back-End-Final-Education/Areas/Admin/Controllers/SliderController.cs" Line="110" Column="26" />
-      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Slider/Index.cshtml" Line="40" Column="11" />
-      <File FileName="Back-End-Final-Education/ViewModels/Slider/SliderVM.cs" Line="15" Column="1" />
-      <File FileName="Back-End-Final-Education/Services/Interfaces/ISliderService.cs" Line="15" Column="41" />
-      <File FileName="Back-End-Final-Education/Services/SliderService.cs" Line="27" Column="10" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Controllers/SliderController.cs" Line="183" Column="1" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Slider/Index.cshtml" />
+      <File FileName="Back-End-Final-Education/ViewModels/Slider/SliderVM.cs" />
+      <File FileName="Back-End-Final-Education/Services/Interfaces/ISliderService.cs" Line="17" Column="61" />
+      <File FileName="Back-End-Final-Education/Services/SliderService.cs" Line="51" Column="54" />
       <File FileName="Back-End-Final-Education/Areas/Admin/Views/_ViewImports.cshtml" />
       <File FileName="Back-End-Final-Education/Areas/Admin/Views/Shared/_Layout.cshtml" Line="42" Column="27" />
-      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Slider/Detail.cshtml" Line="27" Column="3" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Slider/Detail.cshtml" />
       <File FileName="Back-End-Final-Education/ViewModels/Slider/SliderDetailVM.cs" />
-      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Slider/Create.cshtml" Line="13" Column="118" />
-      <File FileName="Back-End-Final-Education/ViewModels/Slider/SliderCreateVM.cs" Line="20" Column="28" />
-      <File FileName="Back-End-Final-Education/Helpers/Extensions/FileExtensions.cs" Line="37" Column="5" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Slider/Create.cshtml" />
+      <File FileName="Back-End-Final-Education/ViewModels/Slider/SliderCreateVM.cs" />
+      <File FileName="Back-End-Final-Education/Helpers/Extensions/FileExtensions.cs" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Slider/Edit.cshtml" Line="4" Column="21" />
+      <File FileName="Back-End-Final-Education/ViewModels/Slider/SliderEditVM.cs" Line="9" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -29,9 +31,7 @@
                 <Node name="Admin" expanded="True">
                   <Node name="Controllers" expanded="True" />
                   <Node name="Views" expanded="True">
-                    <Node name="Shared" expanded="True">
-                      <Node name="_Layout.cshtml" selected="True" />
-                    </Node>
+                    <Node name="Shared" expanded="True" />
                     <Node name="Slider" expanded="True" />
                   </Node>
                 </Node>

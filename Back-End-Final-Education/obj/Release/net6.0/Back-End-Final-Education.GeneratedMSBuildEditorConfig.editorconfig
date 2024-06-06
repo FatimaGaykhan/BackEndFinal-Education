@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2xpZGVyL0RldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/Areas/Admin/Views/Slider/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2xpZGVyL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/Areas/Admin/Views/Slider/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2xpZGVyL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

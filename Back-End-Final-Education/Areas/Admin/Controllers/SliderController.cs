@@ -111,6 +111,81 @@ namespace Back_End_Final_Education.Areas.Admin.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id is null) return BadRequest();
+
+            var slider = await _sliderService.GetByIdAsync((int)id);
+
+            if (slider is null) return NotFound();
+
+            return View(new SliderEditVM { Title = slider.Title, Description = slider.Description,Subject=slider.Subject, Image = slider.Image });
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(SliderEditVM request,int? id)
+        {
+            if (!ModelState.IsValid)
+            {
+
+                var existSlider = await _sliderService.GetByIdAsync((int)id);
+
+
+                return View(new SliderEditVM { Image = existSlider.Image });
+            }
+
+
+            if (id is null) return BadRequest();
+
+            if (await _sliderService.ExistExceptByIdAsync((int)id, request.Title))
+            {
+                ModelState.AddModelError("Title", "This slider title already exist");
+                return View();
+            }
+
+            var slider= await _sliderService.GetByIdAsync((int)id);
+
+            if (slider is null) return NotFound();
+
+            if (request.NewImage != null)
+            {
+                if (!request.NewImage.CheckFileType("image/"))
+                {
+                    ModelState.AddModelError("NewImage", "Input can accept only image format");
+                    request.Image = slider.Image;
+                    return View(request);
+                }
+
+                if (!request.NewImage.CheckFileSize(200))
+                {
+                    ModelState.AddModelError("NewImage", "Image size  must be max 200KB");
+                    request.Image = slider.Image;
+                    return View(request);
+                }
+
+                string oldPath = _env.GenerateFilePath("assets/img", slider.Image);
+
+                oldPath.DeleteFileFromLocal();
+
+                string fileName = Guid.NewGuid().ToString() + "-" + request.NewImage.FileName;
+
+
+                string newPath = _env.GenerateFilePath("assets/img", fileName);
+
+                await request.NewImage.SaveFileToLocalAsync(newPath);
+
+                slider.Image = fileName;
+
+            }
+
+
+            await _sliderService.EditAsync(slider, request);
+
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
 
