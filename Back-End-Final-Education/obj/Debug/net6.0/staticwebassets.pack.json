@@ -1,0 +1,513 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/obj/Debug/net6.0/scopedcss/projectbundle/Back-End-Final-Education.bundle.scp.css",
+      "PackagePath": "staticwebassets/Back-End-Final-Education.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/assets/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/css/style.css",
+      "PackagePath": "staticwebassets/assets/css/style.css"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/about.jpg",
+      "PackagePath": "staticwebassets/assets/img/about.jpg"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/carousel-1.jpg",
+      "PackagePath": "staticwebassets/assets/img/carousel-1.jpg"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/carousel-2.jpg",
+      "PackagePath": "staticwebassets/assets/img/carousel-2.jpg"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/cat-1.jpg",
+      "PackagePath": "staticwebassets/assets/img/cat-1.jpg"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/cat-2.jpg",
+      "PackagePath": "staticwebassets/assets/img/cat-2.jpg"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/cat-3.jpg",
+      "PackagePath": "staticwebassets/assets/img/cat-3.jpg"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/cat-4.jpg",
+      "PackagePath": "staticwebassets/assets/img/cat-4.jpg"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/course-1.jpg",
+      "PackagePath": "staticwebassets/assets/img/course-1.jpg"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/course-2.jpg",
+      "PackagePath": "staticwebassets/assets/img/course-2.jpg"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/course-3.jpg",
+      "PackagePath": "staticwebassets/assets/img/course-3.jpg"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/team-1.jpg",
+      "PackagePath": "staticwebassets/assets/img/team-1.jpg"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/team-2.jpg",
+      "PackagePath": "staticwebassets/assets/img/team-2.jpg"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/team-3.jpg",
+      "PackagePath": "staticwebassets/assets/img/team-3.jpg"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/team-4.jpg",
+      "PackagePath": "staticwebassets/assets/img/team-4.jpg"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/testimonial-1.jpg",
+      "PackagePath": "staticwebassets/assets/img/testimonial-1.jpg"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/testimonial-2.jpg",
+      "PackagePath": "staticwebassets/assets/img/testimonial-2.jpg"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/testimonial-3.jpg",
+      "PackagePath": "staticwebassets/assets/img/testimonial-3.jpg"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/testimonial-4.jpg",
+      "PackagePath": "staticwebassets/assets/img/testimonial-4.jpg"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/js/main.js",
+      "PackagePath": "staticwebassets/assets/js/main.js"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/lib/animate/animate.css",
+      "PackagePath": "staticwebassets/assets/lib/animate/animate.css"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/lib/animate/animate.min.css",
+      "PackagePath": "staticwebassets/assets/lib/animate/animate.min.css"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/lib/easing/easing.js",
+      "PackagePath": "staticwebassets/assets/lib/easing/easing.js"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/lib/easing/easing.min.js",
+      "PackagePath": "staticwebassets/assets/lib/easing/easing.min.js"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/lib/owlcarousel/LICENSE",
+      "PackagePath": "staticwebassets/assets/lib/owlcarousel"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/lib/owlcarousel/assets/ajax-loader.gif",
+      "PackagePath": "staticwebassets/assets/lib/owlcarousel/assets/ajax-loader.gif"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/lib/owlcarousel/assets/owl.carousel.css",
+      "PackagePath": "staticwebassets/assets/lib/owlcarousel/assets/owl.carousel.css"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/lib/owlcarousel/assets/owl.carousel.min.css",
+      "PackagePath": "staticwebassets/assets/lib/owlcarousel/assets/owl.carousel.min.css"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/lib/owlcarousel/assets/owl.theme.default.css",
+      "PackagePath": "staticwebassets/assets/lib/owlcarousel/assets/owl.theme.default.css"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/lib/owlcarousel/assets/owl.theme.default.min.css",
+      "PackagePath": "staticwebassets/assets/lib/owlcarousel/assets/owl.theme.default.min.css"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/lib/owlcarousel/assets/owl.theme.green.css",
+      "PackagePath": "staticwebassets/assets/lib/owlcarousel/assets/owl.theme.green.css"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/lib/owlcarousel/assets/owl.theme.green.min.css",
+      "PackagePath": "staticwebassets/assets/lib/owlcarousel/assets/owl.theme.green.min.css"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/lib/owlcarousel/assets/owl.video.play.png",
+      "PackagePath": "staticwebassets/assets/lib/owlcarousel/assets/owl.video.play.png"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/lib/owlcarousel/owl.carousel.js",
+      "PackagePath": "staticwebassets/assets/lib/owlcarousel/owl.carousel.js"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/lib/owlcarousel/owl.carousel.min.js",
+      "PackagePath": "staticwebassets/assets/lib/owlcarousel/owl.carousel.min.js"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/lib/waypoints/links.php",
+      "PackagePath": "staticwebassets/assets/lib/waypoints/links.php"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/lib/waypoints/waypoints.min.js",
+      "PackagePath": "staticwebassets/assets/lib/waypoints/waypoints.min.js"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/lib/wow/wow.js",
+      "PackagePath": "staticwebassets/assets/lib/wow/wow.js"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/lib/wow/wow.min.js",
+      "PackagePath": "staticwebassets/assets/lib/wow/wow.min.js"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_accordion.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_accordion.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_alert.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_alert.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_badge.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_badge.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_breadcrumb.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_breadcrumb.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_button-group.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_button-group.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_buttons.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_buttons.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_card.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_card.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_carousel.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_carousel.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_close.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_close.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_containers.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_containers.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_dropdown.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_dropdown.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_forms.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_forms.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_functions.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_functions.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_grid.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_grid.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_helpers.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_helpers.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_images.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_images.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_list-group.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_list-group.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_mixins.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_mixins.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_modal.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_modal.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_nav.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_nav.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_navbar.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_navbar.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_offcanvas.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_offcanvas.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_pagination.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_pagination.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_popover.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_popover.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_progress.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_progress.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_reboot.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_reboot.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_root.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_root.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_spinners.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_spinners.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_tables.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_tables.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_toasts.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_toasts.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_tooltip.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_tooltip.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_transitions.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_transitions.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_type.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_type.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_utilities.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_utilities.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/_variables.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/_variables.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/bootstrap-grid.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/bootstrap-grid.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/bootstrap-reboot.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/bootstrap-utilities.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/bootstrap-utilities.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/bootstrap.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/bootstrap.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/forms/_floating-labels.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/forms/_floating-labels.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/forms/_form-check.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/forms/_form-check.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/forms/_form-control.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/forms/_form-control.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/forms/_form-range.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/forms/_form-range.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/forms/_form-select.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/forms/_form-select.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/forms/_form-text.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/forms/_form-text.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/forms/_input-group.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/forms/_input-group.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/forms/_labels.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/forms/_labels.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/forms/_validation.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/forms/_validation.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/helpers/_clearfix.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/helpers/_clearfix.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/helpers/_colored-links.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/helpers/_colored-links.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/helpers/_position.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/helpers/_position.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/helpers/_ratio.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/helpers/_ratio.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/helpers/_stretched-link.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/helpers/_stretched-link.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/helpers/_text-truncation.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/helpers/_text-truncation.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/helpers/_visually-hidden.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/helpers/_visually-hidden.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_alert.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_alert.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_border-radius.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_border-radius.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_box-shadow.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_box-shadow.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_breakpoints.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_breakpoints.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_buttons.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_buttons.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_caret.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_caret.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_clearfix.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_clearfix.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_color-scheme.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_color-scheme.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_container.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_container.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_deprecate.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_deprecate.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_forms.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_forms.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_gradients.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_gradients.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_grid.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_grid.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_image.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_image.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_list-group.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_list-group.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_lists.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_lists.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_pagination.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_pagination.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_reset-text.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_reset-text.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_resize.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_resize.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_table-variants.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_table-variants.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_text-truncate.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_text-truncate.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_transition.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_transition.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_utilities.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_utilities.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/mixins/_visually-hidden.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/mixins/_visually-hidden.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/utilities/_api.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/utilities/_api.scss"
+    },
+    {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/scss/bootstrap/scss/vendor/_rfs.scss",
+      "PackagePath": "staticwebassets/assets/scss/bootstrap/scss/vendor/_rfs.scss"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.Back-End-Final-Education.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.build.Back-End-Final-Education.props",
+      "PackagePath": "build\\Back-End-Final-Education.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.Back-End-Final-Education.props",
+      "PackagePath": "buildMultiTargeting\\Back-End-Final-Education.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.Back-End-Final-Education.props",
+      "PackagePath": "buildTransitive\\Back-End-Final-Education.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

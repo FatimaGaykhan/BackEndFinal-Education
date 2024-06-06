@@ -1,18 +1,55 @@
 ﻿<Properties StartupConfiguration="{E36491FB-4390-4173-8303-952A86BD5133}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Back-End-Final-Education PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Back-End-Final-Education/Areas/Admin/Views/Slider/Detail.cshtml">
+    <Files>
+      <File FileName="Back-End-Final-Education/Areas/Admin/Controllers/SliderController.cs" Line="42" Column="33" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Slider/Index.cshtml" Line="40" Column="11" />
+      <File FileName="Back-End-Final-Education/ViewModels/Slider/SliderVM.cs" Line="15" Column="1" />
+      <File FileName="Back-End-Final-Education/Services/Interfaces/ISliderService.cs" Line="11" Column="43" />
+      <File FileName="Back-End-Final-Education/Services/SliderService.cs" Line="50" Column="1" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/_ViewImports.cshtml" Line="2" Column="50" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Shared/_Layout.cshtml" Line="58" Column="81" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Slider/Detail.cshtml" Line="27" Column="3" />
+      <File FileName="Back-End-Final-Education/ViewModels/Slider/SliderDetailVM.cs" Line="6" Column="44" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Back-End-Final-Education" expanded="True" selected="True" />
+          <Node name="Back-End-Final-Education" expanded="True">
+            <Node name="Back-End-Final-Education" expanded="True">
+              <Node name="Areas" expanded="True">
+                <Node name="Admin" expanded="True">
+                  <Node name="Controllers" expanded="True" />
+                  <Node name="Views" expanded="True">
+                    <Node name="Shared" expanded="True" />
+                    <Node name="Slider" expanded="True">
+                      <Node name="Detail.cshtml" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Services" expanded="True">
+                <Node name="Interfaces" expanded="True" />
+              </Node>
+              <Node name="ViewModels" expanded="True">
+                <Node name="Slider" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="admin" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Back-End-Final-Education PreferredExecutionTarget="/Applications/Google Chrome.app" FirstBuild="True" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

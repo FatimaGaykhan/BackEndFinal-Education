@@ -1,0 +1,27 @@
+﻿@model SliderDetailVM
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Image</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Created Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img style="width: 200px;" src="~/assets/img/@Model.Image" /></td>
+                    <td>@Model.Title</td>
+                    <td>@Model.Subject</td>
+                    <td>@Model.Description</td>
+                    <td>@Model.CreatedDate</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+  
