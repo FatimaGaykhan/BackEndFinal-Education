@@ -1,0 +1,42 @@
+﻿@model InformationEditVM
+<div class="container">
+    
+    <div class="row mt-3">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">Vertical Form</div>
+                    <hr>
+                    <form method="post" asp-action="Edit" enctype="multipart/form-data">
+                        <div class="form-group mt-3">
+                            <label for="input-1">Title</label>
+                            <input asp-for="Title" class="form-control" id="input-1">
+                            <span asp-validation-for="Title" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-1">Description</label>
+                            <input asp-for="Description" class="form-control" id="input-1">
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                       
+                        <div class="form-group">
+                            <label for="input-1">Icon</label>
+                            <select asp-for="IconId" asp-items="@ViewBag.informations" class="form-control"></select>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-light px-5"> Submit</button>
+                            <a class="btn btn-light px-5" asp-action="Index"> Cancel</a>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div><!--End Row-->
+    <!--start overlay-->
+    <div class="overlay toggle-menu"></div>
+    <!--end overlay-->
+
+</div>
+

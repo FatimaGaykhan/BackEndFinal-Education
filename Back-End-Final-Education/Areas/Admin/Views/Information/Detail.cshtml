@@ -1,0 +1,22 @@
+﻿@model InformationDetailVM
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Icon</th>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">Created Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><i class="@Model.ClassName" style=" width: 200px;"></i></td>
+                <td>@Model.Title</td>
+                <td>@Model.Description</td>
+                <td>@Model.CreatedDate</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+

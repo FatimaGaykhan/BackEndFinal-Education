@@ -3,24 +3,37 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.ItemProperties.Back-End-Final-Education PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/Areas/Admin/Controllers/InformationController.cs" relfile="Back-End-Final-Education/Areas/Admin/Controllers/InformationController.cs" line="57" column="1" />
+      <Breakpoint file="/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/Areas/Admin/Controllers/InformationController.cs" relfile="Back-End-Final-Education/Areas/Admin/Controllers/InformationController.cs" line="82" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Back-End-Final-Education/Areas/Admin/Controllers/SliderController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Back-End-Final-Education/Areas/Admin/Controllers/InformationController.cs">
     <Files>
-      <File FileName="Back-End-Final-Education/Areas/Admin/Controllers/SliderController.cs" Line="183" Column="1" />
-      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Slider/Index.cshtml" />
-      <File FileName="Back-End-Final-Education/ViewModels/Slider/SliderVM.cs" />
-      <File FileName="Back-End-Final-Education/Services/Interfaces/ISliderService.cs" Line="17" Column="61" />
-      <File FileName="Back-End-Final-Education/Services/SliderService.cs" Line="51" Column="54" />
-      <File FileName="Back-End-Final-Education/Areas/Admin/Views/_ViewImports.cshtml" />
-      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Shared/_Layout.cshtml" Line="42" Column="27" />
-      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Slider/Detail.cshtml" />
-      <File FileName="Back-End-Final-Education/ViewModels/Slider/SliderDetailVM.cs" />
-      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Slider/Create.cshtml" />
-      <File FileName="Back-End-Final-Education/ViewModels/Slider/SliderCreateVM.cs" />
-      <File FileName="Back-End-Final-Education/Helpers/Extensions/FileExtensions.cs" />
-      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Slider/Edit.cshtml" Line="4" Column="21" />
-      <File FileName="Back-End-Final-Education/ViewModels/Slider/SliderEditVM.cs" Line="9" Column="1" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Controllers/InformationController.cs" Line="125" Column="1" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Information/Index.cshtml" Line="25" Column="1" />
+      <File FileName="Back-End-Final-Education/Services/Interfaces/IInformationService.cs" Line="20" Column="60" />
+      <File FileName="Back-End-Final-Education/Services/InformationService.cs" Line="92" Column="48" />
+      <File FileName="Back-End-Final-Education/ViewModels/Informations/InformationVM.cs" Line="7" Column="1" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/_ViewImports.cshtml" Line="3" Column="56" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Shared/_Layout.cshtml" Line="63" Column="70" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Controllers/SliderController.cs" Line="99" Column="10" />
+      <File FileName="Back-End-Final-Education/Services/Interfaces/ISliderService.cs" Line="16" Column="1" />
+      <File FileName="Back-End-Final-Education/Services/SliderService.cs" Line="28" Column="13" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Information/Detail.cshtml" Line="8" Column="1" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Slider/Detail.cshtml" Line="1" Column="14" />
+      <File FileName="Back-End-Final-Education/ViewModels/Informations/InformationDetailVM.cs" Line="10" Column="1" />
+      <File FileName="Back-End-Final-Education/ViewComponents/InformationViewComponent.cs" Line="25" Column="1" />
+      <File FileName="Back-End-Final-Education/Program.cs" Line="39" Column="1" />
+      <File FileName="Back-End-Final-Education/Properties/launchSettings.json" Line="13" Column="26" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Information/Create.cshtml" Line="25" Column="86" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Slider/Create.cshtml" Line="9" Column="21" />
+      <File FileName="Back-End-Final-Education/ViewModels/Informations/InformationCreateVM.cs" Line="8" Column="9" />
+      <File FileName="Back-End-Final-Education/ViewModels/Slider/SliderCreateVM.cs" Line="12" Column="22" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Slider/Edit.cshtml" Line="1" Column="1" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Information/Edit.cshtml" Line="24" Column="86" />
+      <File FileName="Back-End-Final-Education/ViewModels/Informations/InformationEditVM.cs" Line="14" Column="9" />
+      <File FileName="Back-End-Final-Education/ViewModels/Slider/SliderEditVM.cs" Line="18" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -29,29 +42,32 @@
             <Node name="Back-End-Final-Education" expanded="True">
               <Node name="Areas" expanded="True">
                 <Node name="Admin" expanded="True">
-                  <Node name="Controllers" expanded="True" />
+                  <Node name="Controllers" expanded="True">
+                    <Node name="InformationController.cs" selected="True" />
+                  </Node>
                   <Node name="Views" expanded="True">
+                    <Node name="Information" expanded="True" />
                     <Node name="Shared" expanded="True" />
                     <Node name="Slider" expanded="True" />
                   </Node>
                 </Node>
               </Node>
-              <Node name="Helpers" expanded="True">
-                <Node name="Extensions" expanded="True" />
-              </Node>
-              <Node name="Models" expanded="True" />
               <Node name="Services" expanded="True">
                 <Node name="Interfaces" expanded="True" />
               </Node>
+              <Node name="ViewComponents" expanded="True" />
               <Node name="ViewModels" expanded="True">
+                <Node name="Informations" expanded="True" />
                 <Node name="Slider" expanded="True" />
               </Node>
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="admin" expanded="True" />
-                <Node name="assets" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="Components" expanded="True">
+                    <Node name="Information" expanded="True" />
+                    <Node name="Slider" expanded="True" />
+                  </Node>
+                </Node>
               </Node>
             </Node>
           </Node>
