@@ -78,7 +78,7 @@ namespace Back_End_Final_Education.Services
                 Subject = m.Subject,
                 Description = m.Description,
                 Title = m.Title,
-            }); ;
+            }); 
         }
 
         public async Task<Slider> GetByIdAsync(int id)

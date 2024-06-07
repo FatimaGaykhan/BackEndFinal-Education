@@ -1,0 +1,25 @@
+﻿@model CategoryDetailVM
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Category</th>
+                <th scope="col">Created Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img style="width: 200px;" src="~/assets/img/@Model.Image" /></td>
+                <td>@Model.Name</td>
+                <td>@Model.CreatedDate</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+

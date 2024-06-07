@@ -18,7 +18,7 @@ namespace Back_End_Final_Education.Data
 
         public DbSet<About> Abouts { get; set; }
 
-
+        public DbSet<Category> Categories { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -27,6 +27,8 @@ namespace Back_End_Final_Education.Data
             modelBuilder.Entity<Icon>().HasQueryFilter(m => !m.SoftDeleted);
             modelBuilder.Entity<Information>().HasQueryFilter(m => !m.SoftDeleted);
             modelBuilder.Entity<About>().HasQueryFilter(m => !m.SoftDeleted);
+            modelBuilder.Entity<Category>().HasQueryFilter(m => !m.SoftDeleted);
+
 
 
 
@@ -141,6 +143,42 @@ namespace Back_End_Final_Education.Data
                    SoftDeleted = false,
                    CreatedDate = DateTime.Now
                }
+              );
+
+            modelBuilder.Entity<Category>().HasData(
+               new Category
+               {
+                   Id = 1,
+                   Name="Web Design",
+                   Image = "cat-1.jpg",
+                   SoftDeleted = false,
+                   CreatedDate = DateTime.Now
+               },
+               new Category
+               {
+                   Id = 2,
+                   Name = "Graphic Design",
+                   Image = "cat-2.jpg",
+                   SoftDeleted = false,
+                   CreatedDate = DateTime.Now
+               },
+               new Category
+               {
+                   Id = 3,
+                   Name = "Video Editing",
+                   Image = "cat-3.jpg",
+                   SoftDeleted = false,
+                   CreatedDate = DateTime.Now
+               },
+               new Category
+               {
+                   Id = 4,
+                   Name = "Online Marketing",
+                   Image = "cat-4.jpg",
+                   SoftDeleted = false,
+                   CreatedDate = DateTime.Now
+               }
+
               );
 
 
