@@ -47,7 +47,7 @@ namespace Back_End_Final_Education.Services
                 ClassName = m.Icon.ClassName,
                 Description = m.Description,
                 Title = m.Title,
-            }); ;
+            }); 
         }
 
         public async Task<Information> GetByIdAsync(int id)

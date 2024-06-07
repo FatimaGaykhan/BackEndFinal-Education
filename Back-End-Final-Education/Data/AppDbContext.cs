@@ -16,6 +16,9 @@ namespace Back_End_Final_Education.Data
 
         public DbSet<Information> Informations { get; set; }
 
+        public DbSet<About> Abouts { get; set; }
+
+
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -23,6 +26,8 @@ namespace Back_End_Final_Education.Data
             modelBuilder.Entity<Slider>().HasQueryFilter(m => !m.SoftDeleted);
             modelBuilder.Entity<Icon>().HasQueryFilter(m => !m.SoftDeleted);
             modelBuilder.Entity<Information>().HasQueryFilter(m => !m.SoftDeleted);
+            modelBuilder.Entity<About>().HasQueryFilter(m => !m.SoftDeleted);
+
 
 
 
@@ -120,6 +125,22 @@ namespace Back_End_Final_Education.Data
                    CreatedDate = DateTime.Now
                }
 
+              );
+
+
+
+
+
+            modelBuilder.Entity<About>().HasData(
+               new About
+               {
+                   Id = 1,
+                   Title = "Welcome to eLEARNING",
+                   Description = "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
+                   Image= "about.jpg",
+                   SoftDeleted = false,
+                   CreatedDate = DateTime.Now
+               }
               );
 
 

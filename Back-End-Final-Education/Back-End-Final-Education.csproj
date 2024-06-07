@@ -47,6 +47,9 @@
     <Folder Include="ViewModels\Informations\" />
     <Folder Include="Views\Shared\Components\Information\" />
     <Folder Include="Areas\Admin\Views\Information\" />
+    <Folder Include="Views\Shared\Components\About\" />
+    <Folder Include="Areas\Admin\Views\About\" />
+    <Folder Include="ViewModels\Abouts\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
@@ -70,6 +73,9 @@
     <None Remove="ViewModels\Informations\" />
     <None Remove="Views\Shared\Components\Information\" />
     <None Remove="Areas\Admin\Views\Information\" />
+    <None Remove="Views\Shared\Components\About\" />
+    <None Remove="Areas\Admin\Views\About\" />
+    <None Remove="ViewModels\Abouts\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.31" />
