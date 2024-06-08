@@ -20,6 +20,16 @@ namespace Back_End_Final_Education.Data
 
         public DbSet<Category> Categories { get; set; }
 
+        public DbSet<Instructor> Instructors { get; set; }
+
+        public DbSet<SocialMedia> SocialMedias { get; set; }
+
+        public DbSet<InstructorSocialMedia> InstructorSocialMedias { get; set; }
+
+
+
+
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -28,6 +38,11 @@ namespace Back_End_Final_Education.Data
             modelBuilder.Entity<Information>().HasQueryFilter(m => !m.SoftDeleted);
             modelBuilder.Entity<About>().HasQueryFilter(m => !m.SoftDeleted);
             modelBuilder.Entity<Category>().HasQueryFilter(m => !m.SoftDeleted);
+            modelBuilder.Entity<Instructor>().HasQueryFilter(m => !m.SoftDeleted);
+            modelBuilder.Entity<SocialMedia>().HasQueryFilter(m => !m.SoftDeleted);
+            modelBuilder.Entity<InstructorSocialMedia>().HasQueryFilter(m => !m.SoftDeleted);
+
+
 
 
 
@@ -182,6 +197,193 @@ namespace Back_End_Final_Education.Data
               );
 
 
+
+            modelBuilder.Entity<Instructor>().HasData(
+               new Instructor
+               {
+                   Id = 1,
+                   FullName = "John Doe",
+                   Position="Web Designer",
+                   Image = "team-1.jpg",
+                   SoftDeleted = false,
+                   CreatedDate = DateTime.Now
+               },
+               new Instructor
+               {
+                   Id = 2,
+                   FullName = "Angelina Jolie",
+                   Position = "Graphic Designer",
+                   Image = "team-2.jpg",
+                   SoftDeleted = false,
+                   CreatedDate = DateTime.Now
+               },
+               new Instructor
+               {
+                   Id = 3,
+                   FullName = "Jake Oliver",
+                   Position = "Video Editor",
+                   Image = "team-3.jpg",
+                   SoftDeleted = false,
+                   CreatedDate = DateTime.Now
+               },
+              new Instructor
+              {
+                  Id = 4,
+                  FullName = "Emily Prior",
+                  Position = "SMM Manager",
+                  Image = "team-4.jpg",
+                  SoftDeleted = false,
+                  CreatedDate = DateTime.Now
+              }
+
+              );
+
+
+
+            modelBuilder.Entity<SocialMedia>().HasData(
+               new SocialMedia
+               {
+                   Id = 1,
+                   Name = "Instagram",
+                   Icon = "fab fa-instagram",
+                   SoftDeleted = false,
+                   CreatedDate = DateTime.Now
+               },
+               new SocialMedia
+               {
+                   Id = 2,
+                   Name = "Facebook",
+                   Icon = "fab fa-facebook-f",
+                   SoftDeleted = false,
+                   CreatedDate = DateTime.Now
+               },
+               new SocialMedia
+               {
+                   Id = 3,
+                   Name = "Twitter",
+                   Icon = "fab fa-twitter",
+                   SoftDeleted = false,
+                   CreatedDate = DateTime.Now
+               }
+
+              );
+
+
+            modelBuilder.Entity<InstructorSocialMedia>().HasData(
+               new InstructorSocialMedia
+               {
+                   Id = 1,
+                   SocialMediaId=1,
+                   InstructorId=1,
+                   SocialLink= "https://www.instagram.com/angelinajolie?igsh=MWRtOGVqaHJ0YTM2bg==",
+                   SoftDeleted = false,
+                   CreatedDate = DateTime.Now
+               },
+               new InstructorSocialMedia
+               {
+                   Id = 2,
+                   SocialMediaId = 2,
+                   InstructorId = 1,
+                   SocialLink = "https://www.facebook.com",
+                   SoftDeleted = false,
+                   CreatedDate = DateTime.Now
+               },
+               new InstructorSocialMedia
+               {
+                   Id = 3,
+                   SocialMediaId = 3,
+                   InstructorId = 1,
+                   SocialLink = "https://x.com",
+                   SoftDeleted = false,
+                   CreatedDate = DateTime.Now
+               },
+
+               new InstructorSocialMedia
+               {
+                   Id = 4,
+                   SocialMediaId = 1,
+                   InstructorId = 2,
+                   SocialLink = "https://www.instagram.com/angelinajolie?igsh=MWRtOGVqaHJ0YTM2bg==",
+                   SoftDeleted = false,
+                   CreatedDate = DateTime.Now
+               },
+               new InstructorSocialMedia
+               {
+                   Id = 5,
+                   SocialMediaId = 2,
+                   InstructorId = 2,
+                   SocialLink = "https://www.facebook.com",
+                   SoftDeleted = false,
+                   CreatedDate = DateTime.Now
+               },
+               new InstructorSocialMedia
+               {
+                   Id = 6,
+                   SocialMediaId = 3,
+                   InstructorId = 2,
+                   SocialLink = "https://x.com",
+                   SoftDeleted = false,
+                   CreatedDate = DateTime.Now
+               },
+
+               new InstructorSocialMedia
+               {
+                   Id = 7,
+                   SocialMediaId = 1,
+                   InstructorId = 3,
+                   SocialLink = "https://www.instagram.com/angelinajolie?igsh=MWRtOGVqaHJ0YTM2bg==",
+                   SoftDeleted = false,
+                   CreatedDate = DateTime.Now
+               },
+               new InstructorSocialMedia
+               {
+                   Id = 8,
+                   SocialMediaId = 2,
+                   InstructorId = 3,
+                   SocialLink = "https://www.facebook.com",
+                   SoftDeleted = false,
+                   CreatedDate = DateTime.Now
+               },
+               new InstructorSocialMedia
+               {
+                   Id = 9,
+                   SocialMediaId = 3,
+                   InstructorId = 3,
+                   SocialLink = "https://x.com",
+                   SoftDeleted = false,
+                   CreatedDate = DateTime.Now
+               },
+               new InstructorSocialMedia
+               {
+                   Id = 10,
+                   SocialMediaId = 1,
+                   InstructorId = 4,
+                   SocialLink = "https://www.instagram.com/angelinajolie?igsh=MWRtOGVqaHJ0YTM2bg==",
+                   SoftDeleted = false,
+                   CreatedDate = DateTime.Now
+               },
+               new InstructorSocialMedia
+               {
+                   Id = 11,
+                   SocialMediaId = 2,
+                   InstructorId = 4,
+                   SocialLink = "https://www.facebook.com",
+                   SoftDeleted = false,
+                   CreatedDate = DateTime.Now
+               },
+               new InstructorSocialMedia
+               {
+                   Id = 12,
+                   SocialMediaId = 3,
+                   InstructorId = 4,
+                   SocialLink = "https://x.com",
+                   SoftDeleted = false,
+                   CreatedDate = DateTime.Now
+               }
+
+
+
+              );
 
 
 

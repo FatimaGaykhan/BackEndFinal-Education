@@ -47,3 +47,40 @@ $(document).on("click", ".image-card-product .main-image-btn", function () {
 })
 
 
+
+////scialmedialinks
+//let socialMediaLinksWrappers = document.querySelectorAll(".socialMediaLinksWrapper")
+//let socialmedialinks = document.querySelectorAll(".socialMediaLinks")
+
+//socialmedialinks.forEach(linkElement => {
+//	let splittedLinkArray = linkElement.innerText.split(",");
+//	//console.log(splittedLinkArray)
+
+//	splittedLinkArray.forEach(oneLink => {
+//		//console.log(oneLink)
+
+//		socialMediaLinksWrappers.forEach(wrapper => {
+//			wrapper.innerHTML += `
+//				<a style="display:block;" href="${oneLink}">${oneLink}</a>
+//			`
+//		})
+//		//wrapper.innerHTML += `
+//		// <a style="display:block;" href="${oneLink}">${oneLink}</a>
+//		//`
+//	})
+
+//}
+
+//)
+
+
+//console.log(socialmedialinks)
+
+//let allLinks = socialmedialinks.innerText.split(",")
+
+//allLinks.forEach(link => socialMediaLinksWrapper.innerHTML += `
+//      <a style="display:block;" href="${link}">${link}</a>
+//`)
+
+//console.log(allLinks)
+
