@@ -19,7 +19,7 @@ namespace Back_End_Final_Education.Services.Interfaces
         Task AddSocialAsync(InstructorSocialMedia instructorSocialMedia);
         Task<SelectList> GetAllSelectedByLinkAsync(int id);
         Task EditAsync(Instructor instructor, InstructorEditVM request);
-
+        Task DeleteSocialLinkAsync(InstructorSocialLinkDeleteVM data);
     }
 }
 

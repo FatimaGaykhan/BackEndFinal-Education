@@ -20,8 +20,11 @@ namespace Back_End_Final_Education.ViewModels.Instructor
 
         public IFormFile NewImage { get; set; }
 
+        public List<InstructorSocialMediaLinkVM> SocialMediaLinks { get; set; }
+
+
         //public int SocialMediaId { get; set; }
-        
+
         //public string Link { get; set; }
 
 

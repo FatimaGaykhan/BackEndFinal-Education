@@ -2393,6 +2393,10 @@
       "PackagePath": "staticwebassets/assets/img/203dec73-cafe-4660-950e-83168d51cd9a-about.jpg"
     },
     {
+      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/41022cdc-6a27-44f3-8496-8457fdfd94b7-team-3.jpg",
+      "PackagePath": "staticwebassets/assets/img/41022cdc-6a27-44f3-8496-8457fdfd94b7-team-3.jpg"
+    },
+    {
       "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/8e6f86f2-ab7d-4ba4-bd2f-a02e83537606-carousel-1.jpg",
       "PackagePath": "staticwebassets/assets/img/8e6f86f2-ab7d-4ba4-bd2f-a02e83537606-carousel-1.jpg"
     },
@@ -2427,10 +2431,6 @@
     {
       "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/course-3.jpg",
       "PackagePath": "staticwebassets/assets/img/course-3.jpg"
-    },
-    {
-      "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/fb4e6f2e-3945-4674-9003-3bb8e059e8a0-team-2.jpg",
-      "PackagePath": "staticwebassets/assets/img/fb4e6f2e-3945-4674-9003-3bb8e059e8a0-team-2.jpg"
     },
     {
       "Id": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/team-1.jpg",

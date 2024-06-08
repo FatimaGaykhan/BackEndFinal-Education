@@ -144,15 +144,18 @@ namespace Back_End_Final_Education.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit(int? id)
         {
-            ViewBag.instructorSocialMedias = await _instructorService.GetAllSelectedByLinkAsync((int)id);
+            //ViewBag.instructorSocialMedias = await _instructorService.GetAllSelectedByLinkAsync((int)id);
 
             if (id is null) return BadRequest();
 
             var instructor= await _instructorService.GetByIdAsync((int)id);
 
+
+
             if (instructor is null) return NotFound();
 
-            return View(new InstructorEditVM { FullName= instructor.FullName, Position = instructor.Position, Image = instructor.Image });
+
+            return View(new InstructorEditVM { FullName = instructor.FullName, Position = instructor.Position, Image = instructor.Image,SocialMediaLinks=instructor.InstructorSocialMedias.Select(m=>new InstructorSocialMediaLinkVM { IntroductId=m.InstructorId,Link=m.SocialLink,SocialId=m.SocialMediaId}).ToList() });
         }
 
         [HttpPost]
@@ -208,6 +211,14 @@ namespace Back_End_Final_Education.Areas.Admin.Controllers
             await _instructorService.EditAsync(instructor, request);
 
             return RedirectToAction(nameof(Index));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteSocialMediaLink(InstructorSocialLinkDeleteVM request)
+        {
+            await _instructorService.DeleteSocialLinkAsync(request);
+
+            return Ok();
         }
     }
 }

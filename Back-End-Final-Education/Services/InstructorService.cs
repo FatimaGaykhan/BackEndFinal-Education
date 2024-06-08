@@ -133,6 +133,15 @@ namespace Back_End_Final_Education.Services
             instructor.Position = request.Position;
             await _context.SaveChangesAsync();
         }
+
+        public async Task DeleteSocialLinkAsync(InstructorSocialLinkDeleteVM data)
+        {
+            var socialmedia = await _context.InstructorSocialMedias.FirstOrDefaultAsync(m => m.InstructorId == data.InstructorId && m.SocialMediaId == data.SocialMediaId && m.SocialLink == data.Link);
+
+            _context.Remove(socialmedia);
+
+            await _context.SaveChangesAsync();
+        }
     }
 }
 
