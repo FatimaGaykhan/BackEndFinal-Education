@@ -66,3 +66,8 @@
 /Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/obj/Debug/net6.0/Back-End-Final-Education.pdb
 /Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/obj/Debug/net6.0/Back-End-Final-Education.genruntimeconfig.cache
 /Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/obj/Debug/net6.0/ref/Back-End-Final-Education.dll
+/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
+/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll

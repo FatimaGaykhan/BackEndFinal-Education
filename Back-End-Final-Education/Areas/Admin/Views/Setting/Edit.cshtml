@@ -1,0 +1,39 @@
+﻿@model SettingEditVM
+
+<div class="container">
+
+    <div class="row mt-3">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">Vertical Form</div>
+                    <hr>
+                    <form method="post" asp-action="Edit" enctype="multipart/form-data">
+                        <div class="form-group mt-3">
+                            <label for="input-1">Key</label>
+                            <input asp-for="Key" class="form-control" id="input-1" readonly>
+                            <span asp-validation-for="Key" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-1">Value</label>
+                            <input asp-for="Value" class="form-control" id="input-1">
+                            <span asp-validation-for="Value" class="text-danger"></span>
+                        </div>
+
+                        
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-light px-5"> Submit</button>
+                            <a class="btn btn-light px-5" asp-action="Index"> Cancel</a>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div><!--End Row-->
+    <!--start overlay-->
+    <div class="overlay toggle-menu"></div>
+    <!--end overlay-->
+
+</div>

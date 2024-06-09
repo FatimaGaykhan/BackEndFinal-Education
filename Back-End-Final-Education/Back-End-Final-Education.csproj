@@ -59,6 +59,18 @@
     <Folder Include="Views\Shared\Components\Student\" />
     <Folder Include="ViewModels\Students\" />
     <Folder Include="Areas\Admin\Views\Student\" />
+    <Folder Include="Views\Shared\Components\Footer\" />
+    <Folder Include="Views\Shared\Components\Header\" />
+    <Folder Include="ViewModels\Setting\" />
+    <Folder Include="Areas\Admin\Views\Setting\" />
+    <Folder Include="Views\Contact\" />
+    <Folder Include="ViewModels\Contact\" />
+    <Folder Include="Views\Shared\Components\Course\" />
+    <Folder Include="ViewModels\Course\" />
+    <Folder Include="Areas\Admin\Views\Course\" />
+    <Folder Include="Views\Account\" />
+    <Folder Include="ViewModels\Account\" />
+    <Folder Include="Helpers\Enums\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
@@ -94,6 +106,18 @@
     <None Remove="Views\Shared\Components\Student\" />
     <None Remove="ViewModels\Students\" />
     <None Remove="Areas\Admin\Views\Student\" />
+    <None Remove="Views\Shared\Components\Footer\" />
+    <None Remove="Views\Shared\Components\Header\" />
+    <None Remove="ViewModels\Setting\" />
+    <None Remove="Areas\Admin\Views\Setting\" />
+    <None Remove="Views\Contact\" />
+    <None Remove="ViewModels\Contact\" />
+    <None Remove="Views\Shared\Components\Course\" />
+    <None Remove="ViewModels\Course\" />
+    <None Remove="Areas\Admin\Views\Course\" />
+    <None Remove="Views\Account\" />
+    <None Remove="ViewModels\Account\" />
+    <None Remove="Helpers\Enums\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.31" />
@@ -106,5 +130,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.31" />
   </ItemGroup>
 </Project>

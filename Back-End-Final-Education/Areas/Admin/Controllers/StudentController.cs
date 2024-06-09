@@ -6,6 +6,7 @@ using Back_End_Final_Education.Helpers.Extensions;
 using Back_End_Final_Education.Models;
 using Back_End_Final_Education.Services;
 using Back_End_Final_Education.Services.Interfaces;
+using Back_End_Final_Education.ViewModels.Instructor;
 using Back_End_Final_Education.ViewModels.Slider;
 using Back_End_Final_Education.ViewModels.Students;
 using Microsoft.AspNetCore.Mvc;
@@ -169,6 +170,33 @@ namespace Back_End_Final_Education.Areas.Admin.Controllers
             await _studentService.EditAsync(student, request);
 
             return RedirectToAction(nameof(Index));
+        }
+
+
+        [HttpGet]
+        public async Task<IActionResult> AddToCourse()
+        {
+            ViewBag.courses = await _studentService.GetAllSelectedByCourseAsync();
+            ViewBag.students = await _studentService.GetAllSelectedByStudentAsync();
+
+
+
+            return View();
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddToCourse( StudentAddToCourseVM request)
+        {
+            ViewBag.courses = await _studentService.GetAllSelectedByCourseAsync();
+            ViewBag.students = await _studentService.GetAllSelectedByStudentAsync();
+
+
+            await _studentService.AddToCourseAsync(new CourseStudent { CourseId = request.CourseId, StudentId= request.StudentId });
+
+            return RedirectToAction(nameof(Index));
+
         }
     }
 }

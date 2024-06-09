@@ -53,12 +53,80 @@ namespace Back_End_Final_Education.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4650),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5100),
                             Description = "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet",
                             Image = "about.jpg",
                             SoftDeleted = false,
                             Title = "Welcome to eLEARNING"
                         });
+                });
+
+            modelBuilder.Entity("Back_End_Final_Education.Models.AppUser", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("FullName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedEmail")
+                        .HasDatabaseName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasDatabaseName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.ToTable("AspNetUsers", (string)null);
                 });
 
             modelBuilder.Entity("Back_End_Final_Education.Models.Category", b =>
@@ -89,7 +157,7 @@ namespace Back_End_Final_Education.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4660),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5110),
                             Image = "cat-1.jpg",
                             Name = "Web Design",
                             SoftDeleted = false
@@ -97,7 +165,7 @@ namespace Back_End_Final_Education.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4670),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5110),
                             Image = "cat-2.jpg",
                             Name = "Graphic Design",
                             SoftDeleted = false
@@ -105,7 +173,7 @@ namespace Back_End_Final_Education.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4670),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5110),
                             Image = "cat-3.jpg",
                             Name = "Video Editing",
                             SoftDeleted = false
@@ -113,10 +181,276 @@ namespace Back_End_Final_Education.Migrations
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4670),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5120),
                             Image = "cat-4.jpg",
                             Name = "Online Marketing",
                             SoftDeleted = false
+                        });
+                });
+
+            modelBuilder.Entity("Back_End_Final_Education.Models.Course", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("InstructorId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("Rating")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("SoftDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.HasIndex("InstructorId");
+
+                    b.ToTable("Courses");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CategoryId = 1,
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5270),
+                            Description = "Hello",
+                            EndDate = new DateTime(2024, 7, 29, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            InstructorId = 1,
+                            Name = "Ux-Ui",
+                            Price = 200m,
+                            Rating = 10,
+                            SoftDeleted = false,
+                            StartDate = new DateTime(2024, 1, 29, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CategoryId = 1,
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5270),
+                            Description = "Hello",
+                            EndDate = new DateTime(2024, 7, 29, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            InstructorId = 2,
+                            Name = "Graphic",
+                            Price = 300m,
+                            Rating = 15,
+                            SoftDeleted = false,
+                            StartDate = new DateTime(2024, 1, 29, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CategoryId = 2,
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5270),
+                            Description = "Hello",
+                            EndDate = new DateTime(2024, 7, 29, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            InstructorId = 2,
+                            Name = "Front-End",
+                            Price = 100m,
+                            Rating = 10,
+                            SoftDeleted = false,
+                            StartDate = new DateTime(2024, 1, 29, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CategoryId = 4,
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5270),
+                            Description = "Hello",
+                            EndDate = new DateTime(2024, 7, 29, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            InstructorId = 4,
+                            Name = "Editor",
+                            Price = 400m,
+                            Rating = 20,
+                            SoftDeleted = false,
+                            StartDate = new DateTime(2024, 1, 29, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
+                });
+
+            modelBuilder.Entity("Back_End_Final_Education.Models.CourseImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsMain")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.ToTable("CourseImages");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CourseId = 1,
+                            IsMain = true,
+                            Name = "course-1.jpg"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CourseId = 1,
+                            IsMain = false,
+                            Name = "course-2.jpg"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CourseId = 2,
+                            IsMain = false,
+                            Name = "course-3.jpg"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CourseId = 2,
+                            IsMain = true,
+                            Name = "course-1.jpg"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CourseId = 3,
+                            IsMain = false,
+                            Name = "course-2.jpg"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CourseId = 3,
+                            IsMain = true,
+                            Name = "course-1.jpg"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CourseId = 4,
+                            IsMain = true,
+                            Name = "course-1.jpg"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CourseId = 4,
+                            IsMain = false,
+                            Name = "course-2.jpg"
+                        });
+                });
+
+            modelBuilder.Entity("Back_End_Final_Education.Models.CourseStudent", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("SoftDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("StudentId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("CourseStudents");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CourseId = 2,
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5280),
+                            SoftDeleted = false,
+                            StudentId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CourseId = 2,
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5290),
+                            SoftDeleted = false,
+                            StudentId = 2
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CourseId = 2,
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5290),
+                            SoftDeleted = false,
+                            StudentId = 3
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CourseId = 2,
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5290),
+                            SoftDeleted = false,
+                            StudentId = 4
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CourseId = 1,
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5290),
+                            SoftDeleted = false,
+                            StudentId = 1
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CourseId = 3,
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5300),
+                            SoftDeleted = false,
+                            StudentId = 2
                         });
                 });
 
@@ -146,28 +480,28 @@ namespace Back_End_Final_Education.Migrations
                         {
                             Id = 1,
                             ClassName = "fa fa-3x fa-graduation-cap",
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4620),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5060),
                             SoftDeleted = false
                         },
                         new
                         {
                             Id = 2,
                             ClassName = "fa fa-3x fa-globe",
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4620),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5060),
                             SoftDeleted = false
                         },
                         new
                         {
                             Id = 3,
                             ClassName = "fa fa-3x fa-home",
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4620),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5070),
                             SoftDeleted = false
                         },
                         new
                         {
                             Id = 4,
                             ClassName = "fa fa-3x fa-book-open",
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4620),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5070),
                             SoftDeleted = false
                         });
                 });
@@ -209,7 +543,7 @@ namespace Back_End_Final_Education.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4630),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5080),
                             Description = "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
                             IconId = 1,
                             SoftDeleted = false,
@@ -218,7 +552,7 @@ namespace Back_End_Final_Education.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4640),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5080),
                             Description = "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
                             IconId = 2,
                             SoftDeleted = false,
@@ -227,7 +561,7 @@ namespace Back_End_Final_Education.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4640),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5090),
                             Description = "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
                             IconId = 3,
                             SoftDeleted = false,
@@ -236,7 +570,7 @@ namespace Back_End_Final_Education.Migrations
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4640),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5090),
                             Description = "Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam",
                             IconId = 4,
                             SoftDeleted = false,
@@ -275,7 +609,7 @@ namespace Back_End_Final_Education.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4680),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5130),
                             FullName = "John Doe",
                             Image = "team-1.jpg",
                             Position = "Web Designer",
@@ -284,7 +618,7 @@ namespace Back_End_Final_Education.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4680),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5150),
                             FullName = "Angelina Jolie",
                             Image = "team-2.jpg",
                             Position = "Graphic Designer",
@@ -293,7 +627,7 @@ namespace Back_End_Final_Education.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4680),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5150),
                             FullName = "Jake Oliver",
                             Image = "team-3.jpg",
                             Position = "Video Editor",
@@ -302,7 +636,7 @@ namespace Back_End_Final_Education.Migrations
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4690),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5150),
                             FullName = "Emily Prior",
                             Image = "team-4.jpg",
                             Position = "SMM Manager",
@@ -340,6 +674,185 @@ namespace Back_End_Final_Education.Migrations
                     b.HasIndex("SocialMediaId");
 
                     b.ToTable("InstructorSocialMedias");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 100,
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5170),
+                            InstructorId = 1,
+                            SocialLink = "https://www.instagram.com/angelinajolie?igsh=MWRtOGVqaHJ0YTM2bg==",
+                            SocialMediaId = 1,
+                            SoftDeleted = false
+                        },
+                        new
+                        {
+                            Id = 101,
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5180),
+                            InstructorId = 1,
+                            SocialLink = "https://www.facebook.com",
+                            SocialMediaId = 2,
+                            SoftDeleted = false
+                        },
+                        new
+                        {
+                            Id = 102,
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5180),
+                            InstructorId = 1,
+                            SocialLink = "https://x.com",
+                            SocialMediaId = 3,
+                            SoftDeleted = false
+                        },
+                        new
+                        {
+                            Id = 103,
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5180),
+                            InstructorId = 2,
+                            SocialLink = "https://www.instagram.com/angelinajolie?igsh=MWRtOGVqaHJ0YTM2bg==",
+                            SocialMediaId = 1,
+                            SoftDeleted = false
+                        },
+                        new
+                        {
+                            Id = 104,
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5180),
+                            InstructorId = 2,
+                            SocialLink = "https://www.facebook.com",
+                            SocialMediaId = 2,
+                            SoftDeleted = false
+                        },
+                        new
+                        {
+                            Id = 105,
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5190),
+                            InstructorId = 2,
+                            SocialLink = "https://x.com",
+                            SocialMediaId = 3,
+                            SoftDeleted = false
+                        },
+                        new
+                        {
+                            Id = 106,
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5190),
+                            InstructorId = 3,
+                            SocialLink = "https://www.instagram.com/angelinajolie?igsh=MWRtOGVqaHJ0YTM2bg==",
+                            SocialMediaId = 1,
+                            SoftDeleted = false
+                        },
+                        new
+                        {
+                            Id = 107,
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5190),
+                            InstructorId = 3,
+                            SocialLink = "https://www.facebook.com",
+                            SocialMediaId = 2,
+                            SoftDeleted = false
+                        },
+                        new
+                        {
+                            Id = 108,
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5190),
+                            InstructorId = 3,
+                            SocialLink = "https://x.com",
+                            SocialMediaId = 3,
+                            SoftDeleted = false
+                        },
+                        new
+                        {
+                            Id = 109,
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5200),
+                            InstructorId = 4,
+                            SocialLink = "https://www.instagram.com/angelinajolie?igsh=MWRtOGVqaHJ0YTM2bg==",
+                            SocialMediaId = 1,
+                            SoftDeleted = false
+                        },
+                        new
+                        {
+                            Id = 110,
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5200),
+                            InstructorId = 4,
+                            SocialLink = "https://www.facebook.com",
+                            SocialMediaId = 2,
+                            SoftDeleted = false
+                        },
+                        new
+                        {
+                            Id = 111,
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5200),
+                            InstructorId = 4,
+                            SocialLink = "https://x.com",
+                            SocialMediaId = 3,
+                            SoftDeleted = false
+                        });
+                });
+
+            modelBuilder.Entity("Back_End_Final_Education.Models.Setting", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Key")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Settings");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1000,
+                            Key = "Address",
+                            Value = "123 Street, New York, USA"
+                        },
+                        new
+                        {
+                            Id = 1001,
+                            Key = "Phone Number",
+                            Value = "+012 345 67890"
+                        },
+                        new
+                        {
+                            Id = 1002,
+                            Key = "Email",
+                            Value = "fatimaeg@code.edu.az"
+                        },
+                        new
+                        {
+                            Id = 1003,
+                            Key = "GetInTouch",
+                            Value = "The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. "
+                        },
+                        new
+                        {
+                            Id = 1004,
+                            Key = "Twitter",
+                            Value = "https://x.com/ "
+                        },
+                        new
+                        {
+                            Id = 1005,
+                            Key = "Facebook",
+                            Value = "https://www.facebook.com/?locale=az_AZ"
+                        },
+                        new
+                        {
+                            Id = 1006,
+                            Key = "Youtube",
+                            Value = "https://www.youtube.com/ "
+                        },
+                        new
+                        {
+                            Id = 1007,
+                            Key = "Instagram",
+                            Value = "https://www.instagram.com/"
+                        });
                 });
 
             modelBuilder.Entity("Back_End_Final_Education.Models.Slider", b =>
@@ -382,7 +895,7 @@ namespace Back_End_Final_Education.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4540),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5000),
                             Description = "Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.",
                             Image = "carousel-1.jpg",
                             SoftDeleted = false,
@@ -392,7 +905,7 @@ namespace Back_End_Final_Education.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4550),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5000),
                             Description = "Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.",
                             Image = "carousel-2.jpg",
                             SoftDeleted = false,
@@ -429,7 +942,7 @@ namespace Back_End_Final_Education.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4700),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5160),
                             Icon = "fab fa-instagram",
                             Name = "Instagram",
                             SoftDeleted = false
@@ -437,7 +950,7 @@ namespace Back_End_Final_Education.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4700),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5160),
                             Icon = "fab fa-facebook-f",
                             Name = "Facebook",
                             SoftDeleted = false
@@ -445,7 +958,7 @@ namespace Back_End_Final_Education.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4710),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5170),
                             Icon = "fab fa-twitter",
                             Name = "Twitter",
                             SoftDeleted = false
@@ -486,7 +999,7 @@ namespace Back_End_Final_Education.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4720),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5220),
                             Description = "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.",
                             FullName = "James Beaufort",
                             Image = "testimonial-1.jpg",
@@ -496,7 +1009,7 @@ namespace Back_End_Final_Education.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4720),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5220),
                             Description = "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.",
                             FullName = "Lydia Beaufort",
                             Image = "testimonial-2.jpg",
@@ -506,7 +1019,7 @@ namespace Back_End_Final_Education.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4720),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5220),
                             Description = "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.",
                             FullName = "Max Beaufort",
                             Image = "testimonial-3.jpg",
@@ -516,13 +1029,195 @@ namespace Back_End_Final_Education.Migrations
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 6, 9, 11, 24, 27, 519, DateTimeKind.Local).AddTicks(4720),
+                            CreatedDate = new DateTime(2024, 6, 10, 0, 29, 26, 635, DateTimeKind.Local).AddTicks(5220),
                             Description = "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.",
                             FullName = "Ruby Beaufort",
                             Image = "testimonial-4.jpg",
                             Profession = "Programmer",
                             SoftDeleted = false
                         });
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasDatabaseName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.ToTable("AspNetRoles", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RoleId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetRoleClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderKey")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderDisplayName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("LoginProvider", "ProviderKey");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserLogins", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("RoleId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetUserRoles", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserId", "LoginProvider", "Name");
+
+                    b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("Back_End_Final_Education.Models.Course", b =>
+                {
+                    b.HasOne("Back_End_Final_Education.Models.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Back_End_Final_Education.Models.Instructor", "Instructor")
+                        .WithMany()
+                        .HasForeignKey("InstructorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+
+                    b.Navigation("Instructor");
+                });
+
+            modelBuilder.Entity("Back_End_Final_Education.Models.CourseImage", b =>
+                {
+                    b.HasOne("Back_End_Final_Education.Models.Course", "Course")
+                        .WithMany("CourseImages")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+                });
+
+            modelBuilder.Entity("Back_End_Final_Education.Models.CourseStudent", b =>
+                {
+                    b.HasOne("Back_End_Final_Education.Models.Course", "Course")
+                        .WithMany("CourseStudents")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Back_End_Final_Education.Models.Student", "Student")
+                        .WithMany()
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Student");
                 });
 
             modelBuilder.Entity("Back_End_Final_Education.Models.Information", b =>
@@ -553,6 +1248,64 @@ namespace Back_End_Final_Education.Migrations
                     b.Navigation("Instructor");
 
                     b.Navigation("SocialMedia");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.HasOne("Back_End_Final_Education.Models.AppUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.HasOne("Back_End_Final_Education.Models.AppUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Back_End_Final_Education.Models.AppUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.HasOne("Back_End_Final_Education.Models.AppUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Back_End_Final_Education.Models.Course", b =>
+                {
+                    b.Navigation("CourseImages");
+
+                    b.Navigation("CourseStudents");
                 });
 
             modelBuilder.Entity("Back_End_Final_Education.Models.Instructor", b =>

@@ -1,0 +1,26 @@
+﻿@model LoginVM
+
+<div style="display:flex; justify-content:center; margin-top:20px;">
+    <div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); width: 300px;">
+        <h2 style="text-align: center; margin-bottom: 20px;">Giriş Yap</h2>
+        <div class="text-danger" asp-validation-summary="ModelOnly">
+
+        </div>
+        <form method="post" asp-controller="Account" asp-action="SignIn">
+            <div style="margin-bottom: 15px;">
+                <label  style="display: block; margin-bottom: 5px;">Email Or Username:</label>
+                <input autocomplete="off" asp-for="EmailOrUsername"  style="width: 100%; padding: 8px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;">
+                <span class="text-danger" asp-validation-for="EmailOrUsername"></span>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 5px;">Password:</label>
+                <input autocomplete="off" asp-for="Password" style="width: 100%; padding: 8px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;">
+                <span class="text-danger" asp-validation-for="Password"></span>
+            </div>
+            <button type="submit" style="width: 100%; padding: 10px; background-color: #007bff; border: none; border-radius: 4px; color: white; font-size: 16px;">Giriş Yap</button>
+        </form>
+    </div>
+</div>
+
+
+

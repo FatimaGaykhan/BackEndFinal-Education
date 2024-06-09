@@ -2,8 +2,10 @@
 using Back_End_Final_Education.Data;
 using Back_End_Final_Education.Models;
 using Back_End_Final_Education.Services.Interfaces;
+using Back_End_Final_Education.ViewModels.Instructor;
 using Back_End_Final_Education.ViewModels.Slider;
 using Back_End_Final_Education.ViewModels.Students;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace Back_End_Final_Education.Services
@@ -16,6 +18,12 @@ namespace Back_End_Final_Education.Services
 		{
             _context = context;
 		}
+
+        public async Task AddToCourseAsync(CourseStudent courseStudent)
+        {
+            _context.CourseStudents.Add(courseStudent);
+            await _context.SaveChangesAsync();
+        }
 
         public async Task CreateAsync(Student student)
         {
@@ -72,6 +80,31 @@ namespace Back_End_Final_Education.Services
                 FullName = m.FullName,
             });
         }
+
+        public async Task<SelectList> GetAllSelectedByCourseAsync()
+        {
+            var courses = await _context.Courses.ToListAsync();
+            return new SelectList(courses, "Id", "Name");
+        }
+
+       
+        public async Task<SelectList> GetAllSelectedByStudentAsync()
+        {
+            var students = await _context.Students.ToListAsync();
+            return new SelectList(students, "Id", "FullName");
+        }
+
+        //public async Task<SelectList> GetAllSelectedByCourseAsync(int id)
+        //{
+        //    var courses = await _context.Courses.Where(m => m.Id == id).ToListAsync();
+        //    return new SelectList(courses, "Id", "Name");
+        //}
+
+        //public async Task<SelectList> GetAllSelectedByStudentAsync(int id)
+        //{
+        //    var students = await _context.Students.Where(m => m.Id == id).ToListAsync();
+        //    return new SelectList(students, "Id", "FullName");
+        //}
 
         public async Task<Student> GetByIdAsync(int id)
         {

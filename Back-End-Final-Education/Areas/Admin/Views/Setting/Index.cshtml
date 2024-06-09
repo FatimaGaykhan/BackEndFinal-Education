@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Setting>
+
+<div class="container mt-5">
+    <h2 class="text-center">Setting</h2>
+    <div class="create-operation mb-5">
+        <a asp-action="Create" class=" btn btn-success">
+            <i class="zmdi zmdi-assignment-returned"></i>
+        </a>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Key</th>
+                    <th scope="col">Value</th>
+                    <th scope="col">Operations</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Key</td>
+                        <td>@item.Value</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning"><i class="zmdi zmdi-brush"></i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
