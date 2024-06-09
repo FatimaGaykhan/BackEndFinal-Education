@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lgn5iFVkdABQMVvhLzjTx6sLegyIjZlgz+aziVL/GLU=",
+  "Hash": "PIDr67O92krYajvHZU0y4y0ePsfJk5sgvMqUVXrHMws=",
   "Source": "Back-End-Final-Education",
   "BasePath": "_content/Back-End-Final-Education",
   "Mode": "Default",
@@ -10200,6 +10200,23 @@
       "OriginalItemSpec": "wwwroot/assets/img/203dec73-cafe-4660-950e-83168d51cd9a-about.jpg"
     },
     {
+      "Identity": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/41022cdc-6a27-44f3-8496-8457fdfd94b7-team-3.jpg",
+      "SourceId": "Back-End-Final-Education",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/",
+      "BasePath": "_content/Back-End-Final-Education",
+      "RelativePath": "assets/img/41022cdc-6a27-44f3-8496-8457fdfd94b7-team-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/img/41022cdc-6a27-44f3-8496-8457fdfd94b7-team-3.jpg"
+    },
+    {
       "Identity": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/8e6f86f2-ab7d-4ba4-bd2f-a02e83537606-carousel-1.jpg",
       "SourceId": "Back-End-Final-Education",
       "SourceType": "Discovered",
@@ -10351,23 +10368,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/assets/img/course-3.jpg"
-    },
-    {
-      "Identity": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/fb4e6f2e-3945-4674-9003-3bb8e059e8a0-team-2.jpg",
-      "SourceId": "Back-End-Final-Education",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/",
-      "BasePath": "_content/Back-End-Final-Education",
-      "RelativePath": "assets/img/fb4e6f2e-3945-4674-9003-3bb8e059e8a0-team-2.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/assets/img/fb4e6f2e-3945-4674-9003-3bb8e059e8a0-team-2.jpg"
     },
     {
       "Identity": "/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/wwwroot/assets/img/team-1.jpg",

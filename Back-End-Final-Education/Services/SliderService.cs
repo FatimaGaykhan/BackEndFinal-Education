@@ -19,7 +19,7 @@ namespace Back_End_Final_Education.Services
 
         public async Task CreateAsync(Slider slider)
         {
-            await _context.AddAsync(slider);
+            await _context.Sliders.AddAsync(slider);
             await _context.SaveChangesAsync();
         }
 

@@ -20,7 +20,7 @@ namespace Back_End_Final_Education.Services
 
         public async Task CreateAsync(Instructor instructor)
         {
-            await _context.AddAsync(instructor);
+            await _context.Instructors.AddAsync(instructor);
             await _context.SaveChangesAsync();
         }
 

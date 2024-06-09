@@ -18,7 +18,7 @@ namespace Back_End_Final_Education.Services
 
         public async Task CreateAsync(Category category)
         {
-            await _context.AddAsync(category);
+            await _context.Categories.AddAsync(category);
             await _context.SaveChangesAsync();
         }
 

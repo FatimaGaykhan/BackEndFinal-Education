@@ -1,0 +1,24 @@
+﻿@model StudentDetailVM
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">FullName</th>
+                <th scope="col">Profession</th>
+                <th scope="col">Description</th>
+                <th scope="col">Created Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img style="width: 200px;" src="~/assets/img/@Model.Image" /></td>
+                <td>@Model.FullName</td>
+                <td>@Model.Profession</td>
+                <td>@Model.Description</td>
+                <td>@Model.CreatedDate</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+

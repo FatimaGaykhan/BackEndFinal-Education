@@ -56,6 +56,9 @@
     <Folder Include="Views\Shared\Components\Instructor\" />
     <Folder Include="Areas\Admin\Views\Instructor\" />
     <Folder Include="ViewModels\Instructor\" />
+    <Folder Include="Views\Shared\Components\Student\" />
+    <Folder Include="ViewModels\Students\" />
+    <Folder Include="Areas\Admin\Views\Student\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
@@ -88,6 +91,9 @@
     <None Remove="Views\Shared\Components\Instructor\" />
     <None Remove="Areas\Admin\Views\Instructor\" />
     <None Remove="ViewModels\Instructor\" />
+    <None Remove="Views\Shared\Components\Student\" />
+    <None Remove="ViewModels\Students\" />
+    <None Remove="Areas\Admin\Views\Student\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.31" />

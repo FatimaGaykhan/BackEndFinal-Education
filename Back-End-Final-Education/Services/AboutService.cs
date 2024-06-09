@@ -20,7 +20,7 @@ namespace Back_End_Final_Education.Services
 
         public async Task CreateAsync(About about)
         {
-            await _context.AddAsync(about);
+            await _context.Abouts.AddAsync(about);
             await _context.SaveChangesAsync();
         }
 

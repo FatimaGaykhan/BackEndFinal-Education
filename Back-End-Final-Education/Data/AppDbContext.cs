@@ -26,6 +26,8 @@ namespace Back_End_Final_Education.Data
 
         public DbSet<InstructorSocialMedia> InstructorSocialMedias { get; set; }
 
+        public DbSet<Student> Students { get; set; }
+
 
 
 
@@ -41,6 +43,7 @@ namespace Back_End_Final_Education.Data
             modelBuilder.Entity<Instructor>().HasQueryFilter(m => !m.SoftDeleted);
             modelBuilder.Entity<SocialMedia>().HasQueryFilter(m => !m.SoftDeleted);
             modelBuilder.Entity<InstructorSocialMedia>().HasQueryFilter(m => !m.SoftDeleted);
+            modelBuilder.Entity<Student>().HasQueryFilter(m => !m.SoftDeleted);
 
 
 
@@ -269,121 +272,168 @@ namespace Back_End_Final_Education.Data
               );
 
 
-            modelBuilder.Entity<InstructorSocialMedia>().HasData(
-               new InstructorSocialMedia
-               {
-                   Id = 1,
-                   SocialMediaId=1,
-                   InstructorId=1,
-                   SocialLink= "https://www.instagram.com/angelinajolie?igsh=MWRtOGVqaHJ0YTM2bg==",
-                   SoftDeleted = false,
-                   CreatedDate = DateTime.Now
-               },
-               new InstructorSocialMedia
+            //modelBuilder.Entity<InstructorSocialMedia>().HasData(
+            //   new InstructorSocialMedia
+            //   {
+            //       Id = 1,
+            //       SocialMediaId=1,
+            //       InstructorId=1,
+            //       SocialLink= "https://www.instagram.com/angelinajolie?igsh=MWRtOGVqaHJ0YTM2bg==",
+            //       SoftDeleted = false,
+            //       CreatedDate = DateTime.Now
+            //   },
+            //   new InstructorSocialMedia
+            //   {
+            //       Id = 2,
+            //       SocialMediaId = 2,
+            //       InstructorId = 1,
+            //       SocialLink = "https://www.facebook.com",
+            //       SoftDeleted = false,
+            //       CreatedDate = DateTime.Now
+            //   },
+            //   new InstructorSocialMedia
+            //   {
+            //       Id = 3,
+            //       SocialMediaId = 3,
+            //       InstructorId = 1,
+            //       SocialLink = "https://x.com",
+            //       SoftDeleted = false,
+            //       CreatedDate = DateTime.Now
+            //   },
+
+            //   new InstructorSocialMedia
+            //   {
+            //       Id = 4,
+            //       SocialMediaId = 1,
+            //       InstructorId = 2,
+            //       SocialLink = "https://www.instagram.com/angelinajolie?igsh=MWRtOGVqaHJ0YTM2bg==",
+            //       SoftDeleted = false,
+            //       CreatedDate = DateTime.Now
+            //   },
+            //   new InstructorSocialMedia
+            //   {
+            //       Id = 5,
+            //       SocialMediaId = 2,
+            //       InstructorId = 2,
+            //       SocialLink = "https://www.facebook.com",
+            //       SoftDeleted = false,
+            //       CreatedDate = DateTime.Now
+            //   },
+            //   new InstructorSocialMedia
+            //   {
+            //       Id = 6,
+            //       SocialMediaId = 3,
+            //       InstructorId = 2,
+            //       SocialLink = "https://x.com",
+            //       SoftDeleted = false,
+            //       CreatedDate = DateTime.Now
+            //   },
+
+            //   new InstructorSocialMedia
+            //   {
+            //       Id = 7,
+            //       SocialMediaId = 1,
+            //       InstructorId = 3,
+            //       SocialLink = "https://www.instagram.com/angelinajolie?igsh=MWRtOGVqaHJ0YTM2bg==",
+            //       SoftDeleted = false,
+            //       CreatedDate = DateTime.Now
+            //   },
+            //   new InstructorSocialMedia
+            //   {
+            //       Id = 8,
+            //       SocialMediaId = 2,
+            //       InstructorId = 3,
+            //       SocialLink = "https://www.facebook.com",
+            //       SoftDeleted = false,
+            //       CreatedDate = DateTime.Now
+            //   },
+            //   new InstructorSocialMedia
+            //   {
+            //       Id = 9,
+            //       SocialMediaId = 3,
+            //       InstructorId = 3,
+            //       SocialLink = "https://x.com",
+            //       SoftDeleted = false,
+            //       CreatedDate = DateTime.Now
+            //   },
+            //   new InstructorSocialMedia
+            //   {
+            //       Id = 10,
+            //       SocialMediaId = 1,
+            //       InstructorId = 4,
+            //       SocialLink = "https://www.instagram.com/angelinajolie?igsh=MWRtOGVqaHJ0YTM2bg==",
+            //       SoftDeleted = false,
+            //       CreatedDate = DateTime.Now
+            //   },
+            //   new InstructorSocialMedia
+            //   {
+            //       Id = 11,
+            //       SocialMediaId = 2,
+            //       InstructorId = 4,
+            //       SocialLink = "https://www.facebook.com",
+            //       SoftDeleted = false,
+            //       CreatedDate = DateTime.Now
+            //   },
+            //   new InstructorSocialMedia
+            //   {
+            //       Id = 12,
+            //       SocialMediaId = 3,
+            //       InstructorId = 4,
+            //       SocialLink = "https://x.com",
+            //       SoftDeleted = false,
+            //       CreatedDate = DateTime.Now
+            //   }
+
+
+
+            //  );
+
+
+
+
+            modelBuilder.Entity<Student>().HasData(
+              new Student
+              {
+                  Id = 1,
+                  FullName = "James Beaufort",
+                  Image= "testimonial-1.jpg",
+                  Description= "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.",
+                  Profession="IT",
+                  SoftDeleted = false,
+                  CreatedDate = DateTime.Now
+              },
+               new Student
                {
                    Id = 2,
-                   SocialMediaId = 2,
-                   InstructorId = 1,
-                   SocialLink = "https://www.facebook.com",
+                   FullName = "Lydia Beaufort",
+                   Image = "testimonial-2.jpg",
+                   Description = "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.",
+                   Profession = "Designer",
                    SoftDeleted = false,
                    CreatedDate = DateTime.Now
                },
-               new InstructorSocialMedia
+               new Student
                {
                    Id = 3,
-                   SocialMediaId = 3,
-                   InstructorId = 1,
-                   SocialLink = "https://x.com",
+                   FullName = "Max Beaufort",
+                   Image = "testimonial-3.jpg",
+                   Description = "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.",
+                   Profession = "SMM",
                    SoftDeleted = false,
                    CreatedDate = DateTime.Now
                },
+                new Student
+                {
+                    Id = 4,
+                    FullName = "Ruby Beaufort",
+                    Image = "testimonial-4.jpg",
+                    Description = "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.",
+                    Profession = "Programmer",
+                    SoftDeleted = false,
+                    CreatedDate = DateTime.Now
+                }
 
-               new InstructorSocialMedia
-               {
-                   Id = 4,
-                   SocialMediaId = 1,
-                   InstructorId = 2,
-                   SocialLink = "https://www.instagram.com/angelinajolie?igsh=MWRtOGVqaHJ0YTM2bg==",
-                   SoftDeleted = false,
-                   CreatedDate = DateTime.Now
-               },
-               new InstructorSocialMedia
-               {
-                   Id = 5,
-                   SocialMediaId = 2,
-                   InstructorId = 2,
-                   SocialLink = "https://www.facebook.com",
-                   SoftDeleted = false,
-                   CreatedDate = DateTime.Now
-               },
-               new InstructorSocialMedia
-               {
-                   Id = 6,
-                   SocialMediaId = 3,
-                   InstructorId = 2,
-                   SocialLink = "https://x.com",
-                   SoftDeleted = false,
-                   CreatedDate = DateTime.Now
-               },
-
-               new InstructorSocialMedia
-               {
-                   Id = 7,
-                   SocialMediaId = 1,
-                   InstructorId = 3,
-                   SocialLink = "https://www.instagram.com/angelinajolie?igsh=MWRtOGVqaHJ0YTM2bg==",
-                   SoftDeleted = false,
-                   CreatedDate = DateTime.Now
-               },
-               new InstructorSocialMedia
-               {
-                   Id = 8,
-                   SocialMediaId = 2,
-                   InstructorId = 3,
-                   SocialLink = "https://www.facebook.com",
-                   SoftDeleted = false,
-                   CreatedDate = DateTime.Now
-               },
-               new InstructorSocialMedia
-               {
-                   Id = 9,
-                   SocialMediaId = 3,
-                   InstructorId = 3,
-                   SocialLink = "https://x.com",
-                   SoftDeleted = false,
-                   CreatedDate = DateTime.Now
-               },
-               new InstructorSocialMedia
-               {
-                   Id = 10,
-                   SocialMediaId = 1,
-                   InstructorId = 4,
-                   SocialLink = "https://www.instagram.com/angelinajolie?igsh=MWRtOGVqaHJ0YTM2bg==",
-                   SoftDeleted = false,
-                   CreatedDate = DateTime.Now
-               },
-               new InstructorSocialMedia
-               {
-                   Id = 11,
-                   SocialMediaId = 2,
-                   InstructorId = 4,
-                   SocialLink = "https://www.facebook.com",
-                   SoftDeleted = false,
-                   CreatedDate = DateTime.Now
-               },
-               new InstructorSocialMedia
-               {
-                   Id = 12,
-                   SocialMediaId = 3,
-                   InstructorId = 4,
-                   SocialLink = "https://x.com",
-                   SoftDeleted = false,
-                   CreatedDate = DateTime.Now
-               }
-
-
-
-              );
+             );
 
 
 
