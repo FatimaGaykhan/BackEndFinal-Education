@@ -48,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2F0ZWdvcnkvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/Areas/Admin/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ29udGFjdC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/Areas/Admin/Views/Course/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ291cnNlL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -132,6 +136,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2xpZGVyL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/Areas/Admin/Views/SocialMedia/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU29jaWFsTWVkaWEvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/Areas/Admin/Views/SocialMedia/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU29jaWFsTWVkaWEvRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/Areas/Admin/Views/SocialMedia/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU29jaWFsTWVkaWEvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/Areas/Admin/Views/SocialMedia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU29jaWFsTWVkaWEvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/Areas/Admin/Views/Student/AddToCourse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU3R1ZGVudC9BZGRUb0NvdXJzZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -174,6 +194,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/Views/Account/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9TaWduVXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/Views/Account/VerifyEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9WZXJpZnlFbWFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/Views/Contact/Index.cshtml]

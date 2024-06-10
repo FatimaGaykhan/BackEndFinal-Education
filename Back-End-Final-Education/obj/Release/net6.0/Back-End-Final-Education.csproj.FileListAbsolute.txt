@@ -71,3 +71,9 @@
 /Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/bin/Release/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/bin/Release/net6.0/Microsoft.Extensions.Identity.Core.dll
 /Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/bin/Release/net6.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/bin/Release/net6.0/BouncyCastle.Cryptography.dll
+/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/bin/Release/net6.0/MailKit.dll
+/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/bin/Release/net6.0/MimeKit.dll
+/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/bin/Release/net6.0/System.Formats.Asn1.dll
+/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/bin/Release/net6.0/System.Security.Cryptography.Pkcs.dll
+/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/bin/Release/net6.0/runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll

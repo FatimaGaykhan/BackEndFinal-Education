@@ -8,72 +8,34 @@
       <Breakpoint file="/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/Areas/Admin/Controllers/InformationController.cs" relfile="Back-End-Final-Education/Areas/Admin/Controllers/InformationController.cs" line="82" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Back-End-Final-Education/Program.cs">
+    <Files>
+      <File FileName="Back-End-Final-Education/Program.cs" Line="47" Column="59" />
+      <File FileName="Back-End-Final-Education/Controllers/AccountController.cs" Line="120" Column="75" />
+      <File FileName="Back-End-Final-Education/Views/Account/VerifyEmail.cshtml" Line="3" Column="49" />
+      <File FileName="Back-End-Final-Education/Services/Interfaces/IEmailService.cs" Line="6" Column="79" />
+      <File FileName="Back-End-Final-Education/Services/EmailService.cs" Line="33" Column="79" />
+      <File FileName="Back-End-Final-Education/appsettings.json" Line="1" Column="1" />
+      <File FileName="Back-End-Final-Education/appsettings.Development.json" Line="6" Column="6" />
+      <File FileName="Back-End-Final-Education/Helpers/EmailSettings.cs" Line="11" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Back-End-Final-Education" expanded="True">
             <Node name="Back-End-Final-Education" expanded="True">
-              <Node name="Areas" expanded="True">
-                <Node name="Admin" expanded="True">
-                  <Node name="Controllers" expanded="True">
-                    <Node name="ContactController.cs" selected="True" />
-                  </Node>
-                  <Node name="Views" expanded="True">
-                    <Node name="Category" expanded="True" />
-                    <Node name="Contact" expanded="True" />
-                    <Node name="Course" expanded="True" />
-                    <Node name="Instructor" expanded="True" />
-                    <Node name="Shared" expanded="True" />
-                    <Node name="Slider" expanded="True" />
-                    <Node name="SocialMedia" expanded="True" />
-                    <Node name="Student" expanded="True" />
-                    <Node name="User" expanded="True" />
-                  </Node>
-                </Node>
-              </Node>
+              <Node name="Dependencies" expanded="True" />
               <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True" />
-              <Node name="Helpers" expanded="True">
-                <Node name="Enums" expanded="True" />
-              </Node>
-              <Node name="Migrations" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Properties" expanded="True" />
+              <Node name="Helpers" expanded="True" />
               <Node name="Services" expanded="True">
                 <Node name="Interfaces" expanded="True" />
               </Node>
-              <Node name="ViewComponents" expanded="True" />
-              <Node name="ViewModels" expanded="True">
-                <Node name="Account" expanded="True" />
-                <Node name="Contact" expanded="True" />
-                <Node name="Course" expanded="True" />
-                <Node name="Instructor" expanded="True" />
-                <Node name="SocialMedia" expanded="True" />
-                <Node name="Students" expanded="True" />
-                <Node name="Users" expanded="True" />
-              </Node>
+              <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Account" expanded="True" />
-                <Node name="Contact" expanded="True" />
-                <Node name="Home" expanded="True" />
-                <Node name="Shared" expanded="True">
-                  <Node name="Components" expanded="True">
-                    <Node name="Course" expanded="True" />
-                    <Node name="Footer" expanded="True" />
-                    <Node name="Header" expanded="True" />
-                  </Node>
-                </Node>
               </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="admin" expanded="True">
-                  <Node name="assets" expanded="True">
-                    <Node name="css" expanded="True" />
-                    <Node name="js" expanded="True" />
-                  </Node>
-                </Node>
-                <Node name="assets" expanded="True" />
-              </Node>
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>

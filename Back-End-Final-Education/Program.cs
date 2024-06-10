@@ -1,5 +1,6 @@
 ﻿using System;
 using Back_End_Final_Education.Data;
+using Back_End_Final_Education.Helpers;
 using Back_End_Final_Education.Models;
 using Back_End_Final_Education.Services;
 using Back_End_Final_Education.Services.Interfaces;
@@ -22,8 +23,11 @@ builder.Services.Configure<IdentityOptions>(opt =>
     opt.Password.RequireUppercase = true;
     opt.Password.RequireLowercase = true;
     opt.User.RequireUniqueEmail = true;
+    opt.SignIn.RequireConfirmedEmail = true;
 
 });
+
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("Smtp"));
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
@@ -40,6 +44,8 @@ builder.Services.AddScoped<ISettingService, SettingService>();
 builder.Services.AddScoped<ICourseService, CourseService>();
 builder.Services.AddScoped<IContactService, ContactService>();
 builder.Services.AddScoped<ISocialMediaService, SocialMediaService>();
+builder.Services.AddScoped<IEmailService, EmailService>();
+
 
 
 

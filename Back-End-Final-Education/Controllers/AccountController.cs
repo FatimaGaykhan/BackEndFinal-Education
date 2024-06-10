@@ -2,13 +2,17 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Threading.Tasks;
+ using System.Threading.Tasks;
 using Back_End_Final_Education.Helpers.Enums;
 using Back_End_Final_Education.Models;
+using Back_End_Final_Education.Services.Interfaces;
 using Back_End_Final_Education.ViewModels.Account;
+using MailKit.Net.Smtp;
+using MailKit.Security;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-
+using MimeKit;
+using MimeKit.Text;
 
 namespace Back_End_Final_Education.Controllers
 {
@@ -17,14 +21,17 @@ namespace Back_End_Final_Education.Controllers
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly IEmailService _emailService;
 
         public AccountController(UserManager<AppUser> userManager,
                                  SignInManager<AppUser> signInManager,
-                                 RoleManager<IdentityRole> roleManager)
+                                 RoleManager<IdentityRole> roleManager,
+                                 IEmailService emailService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _roleManager = roleManager;
+            _emailService = emailService;
         }
 
         [HttpGet]
@@ -103,7 +110,29 @@ namespace Back_End_Final_Education.Controllers
             }
 
             await _userManager.AddToRoleAsync(user, nameof(Roles.Member));
-            return RedirectToAction("Index", "Home");
+
+            string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+
+            var url = Url.Action(nameof(ConfirmEmail), "Account", new { userId = user.Id, token },Request.Scheme,Request.Host.ToString());
+
+            string html = $"<a href='{url}'>Click here for confirmation</a>";
+
+            _emailService.Send(user.Email, "BackEndFinalEducation", html);
+            return RedirectToAction(nameof(VerifyEmail));
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ConfirmEmail(string userId,string token)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            await _userManager.ConfirmEmailAsync(user, token);
+            return RedirectToAction(nameof(SignIn));
+        }
+
+        [HttpGet]
+        public IActionResult VerifyEmail()
+        {
+            return View();
         }
 
         public async Task<IActionResult> LogOut()
