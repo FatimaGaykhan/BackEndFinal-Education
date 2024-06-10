@@ -76,6 +76,7 @@
     <Folder Include="Areas\Admin\Views\Contact\" />
     <Folder Include="ViewModels\SocialMedia\" />
     <Folder Include="Areas\Admin\Views\SocialMedia\" />
+    <Folder Include="Views\Error\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
@@ -128,6 +129,7 @@
     <None Remove="Areas\Admin\Views\Contact\" />
     <None Remove="ViewModels\SocialMedia\" />
     <None Remove="Areas\Admin\Views\SocialMedia\" />
+    <None Remove="Views\Error\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.31" />

@@ -10,7 +10,7 @@ namespace Back_End_Final_Education.Models
 		public string Description { get; set; }
 
 		public string Image { get; set; }
-
+		public List<CourseStudent> CourseStudents { get; set; }
 
 	}
 }

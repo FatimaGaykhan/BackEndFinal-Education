@@ -37,6 +37,15 @@ namespace Back_End_Final_Education.Services
             await _context.SaveChangesAsync();
         }
 
+        public async Task DeleteCourseAsync(DeleteCourseFromStudentVM data)
+        {
+            var studentcourse = await _context.CourseStudents.FirstOrDefaultAsync(m => m.Id == data.CourseId&& m.StudentId== data.StudentId);
+
+            _context.Remove(studentcourse);
+
+            await _context.SaveChangesAsync();
+        }
+
         public async Task<StudentDetailVM> DetailAsync(int id)
         {
             Student student = await _context.Students.Where(m => m.Id == id).FirstOrDefaultAsync();
@@ -111,6 +120,13 @@ namespace Back_End_Final_Education.Services
             return await _context.Students.Where(m => m.Id == id).FirstOrDefaultAsync();
 
         }
+
+        //public async Task<Course> GetByIdWithAllDatasAsync(int id)
+        //{
+        //    return await _context.Students.Where(m => m.Id == id)
+        //                                  .Include(m => m.CourseStudents)
+        //                                  .FirstOrDefaultAsync();                                          .FirstOrDefaultAsync();
+        //}
     }
 }
 

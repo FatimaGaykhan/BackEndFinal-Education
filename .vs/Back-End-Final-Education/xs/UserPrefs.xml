@@ -8,16 +8,41 @@
       <Breakpoint file="/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/Areas/Admin/Controllers/InformationController.cs" relfile="Back-End-Final-Education/Areas/Admin/Controllers/InformationController.cs" line="82" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Back-End-Final-Education/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Back-End-Final-Education/Areas/Admin/Controllers/UserController.cs">
     <Files>
-      <File FileName="Back-End-Final-Education/Program.cs" Line="47" Column="59" />
-      <File FileName="Back-End-Final-Education/Controllers/AccountController.cs" Line="120" Column="75" />
-      <File FileName="Back-End-Final-Education/Views/Account/VerifyEmail.cshtml" Line="3" Column="49" />
-      <File FileName="Back-End-Final-Education/Services/Interfaces/IEmailService.cs" Line="6" Column="79" />
-      <File FileName="Back-End-Final-Education/Services/EmailService.cs" Line="33" Column="79" />
-      <File FileName="Back-End-Final-Education/appsettings.json" Line="1" Column="1" />
-      <File FileName="Back-End-Final-Education/appsettings.Development.json" Line="6" Column="6" />
-      <File FileName="Back-End-Final-Education/Helpers/EmailSettings.cs" Line="11" Column="1" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Controllers/InstructorController.cs" Line="222" Column="10" IsPinned="True" />
+      <File FileName="Back-End-Final-Education/Program.cs" />
+      <File FileName="Back-End-Final-Education/Controllers/AccountController.cs" />
+      <File FileName="Back-End-Final-Education/Views/Account/VerifyEmail.cshtml" />
+      <File FileName="Back-End-Final-Education/Services/Interfaces/IEmailService.cs" />
+      <File FileName="Back-End-Final-Education/Services/EmailService.cs" />
+      <File FileName="Back-End-Final-Education/appsettings.json" />
+      <File FileName="Back-End-Final-Education/appsettings.Development.json" />
+      <File FileName="Back-End-Final-Education/Helpers/EmailSettings.cs" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Course/Edit.cshtml" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Course/Create.cshtml" />
+      <File FileName="Back-End-Final-Education/Views/Shared/Components/Course/Default.cshtml" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Controllers/StudentController.cs" />
+      <File FileName="Back-End-Final-Education/ViewModels/Instructor/InstructorSocialLinkDeleteVM.cs" />
+      <File FileName="Back-End-Final-Education/Services/InstructorService.cs" />
+      <File FileName="Back-End-Final-Education/Services/Interfaces/IInstructorService.cs" />
+      <File FileName="Back-End-Final-Education/Services/Interfaces/IStudentService.cs" />
+      <File FileName="Back-End-Final-Education/Services/StudentService.cs" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Instructor/Edit.cshtml" />
+      <File FileName="Back-End-Final-Education/ViewModels/Instructor/InstructorEditVM.cs" />
+      <File FileName="Back-End-Final-Education/ViewModels/Instructor/InstructorSocialMediaLinkVM.cs" />
+      <File FileName="Back-End-Final-Education/ViewModels/Students/StudentCourseVM.cs" />
+      <File FileName="Back-End-Final-Education/ViewModels/Students/StudentEditVM.cs" />
+      <File FileName="Back-End-Final-Education/Services/Interfaces/ICourseService.cs" />
+      <File FileName="Back-End-Final-Education/Services/CourseService.cs" />
+      <File FileName="Back-End-Final-Education/Models/Student.cs" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Controllers/DashboardController.cs" />
+      <File FileName="Back-End-Final-Education/Controllers/ErrorController.cs" Line="17" Column="30" />
+      <File FileName="Back-End-Final-Education/Views/Error/AppNotFound.cshtml" />
+      <File FileName="Back-End-Final-Education/Views/Error/AppInternalServer.cshtml" />
+      <File FileName="Back-End-Final-Education/Views/Error/BadRequest.cshtml" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Controllers/UserController.cs" Line="18" Column="6" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,17 +50,31 @@
           <Node name="Back-End-Final-Education" expanded="True">
             <Node name="Back-End-Final-Education" expanded="True">
               <Node name="Dependencies" expanded="True" />
+              <Node name="Areas" expanded="True">
+                <Node name="Admin" expanded="True">
+                  <Node name="Controllers" expanded="True">
+                    <Node name="UserController.cs" selected="True" />
+                  </Node>
+                  <Node name="Views" expanded="True">
+                    <Node name="Course" expanded="True" />
+                    <Node name="Instructor" expanded="True" />
+                    <Node name="Shared" expanded="True" />
+                    <Node name="User" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
               <Node name="Controllers" expanded="True" />
               <Node name="Helpers" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="Interfaces" expanded="True" />
-              </Node>
-              <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Account" expanded="True" />
+                <Node name="Error" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="Components" expanded="True">
+                    <Node name="Course" expanded="True" />
+                  </Node>
+                </Node>
               </Node>
               <Node name="appsettings.json" expanded="True" />
-              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>

@@ -113,7 +113,7 @@ namespace Back_End_Final_Education.Areas.Admin.Controllers
 
                 if (student is null) return NotFound();
 
-                return View(new StudentEditVM {  FullName=student.FullName, Description = student.Description, Profession= student.Profession, Image = student.Image });
+                return View(new StudentEditVM {  FullName=student.FullName, Description = student.Description, Profession= student.Profession, Image = student.Image});
         }
 
         [HttpPost]
@@ -198,6 +198,14 @@ namespace Back_End_Final_Education.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
 
         }
+
+        //[HttpPost]
+        //public async Task<IActionResult> DeleteCourse(DeleteCourseFromStudentVM request)
+        //{
+        //    await _studentService.DeleteCourseAsync(request);
+
+        //    return Ok();
+        //}
     }
 }
 

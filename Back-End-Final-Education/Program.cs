@@ -55,6 +55,17 @@ builder.Services.AddScoped<IEmailService, EmailService>();
 
 var app = builder.Build();
 
+if (app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/error/{0}");
+    app.UseHsts();
+}
+else
+{
+    app.UseStatusCodePagesWithReExecute("/error/{0}");
+    app.UseHsts();
+}
+
 
 app.UseHttpsRedirection();
 
@@ -73,6 +84,8 @@ app.MapControllerRoute(
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.UseStatusCodePagesWithRedirects("/Error/{0}");
 
 app.Run();
 

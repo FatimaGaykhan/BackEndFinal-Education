@@ -1,5 +1,6 @@
 ﻿using System;
 using Back_End_Final_Education.Models;
+using Back_End_Final_Education.ViewModels.Instructor;
 using Back_End_Final_Education.ViewModels.Slider;
 using Back_End_Final_Education.ViewModels.Students;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -20,8 +21,9 @@ namespace Back_End_Final_Education.Services.Interfaces
         Task<SelectList> GetAllSelectedByCourseAsync();
         Task<SelectList> GetAllSelectedByStudentAsync();
         Task AddToCourseAsync(CourseStudent courseStudent);
+        Task DeleteCourseAsync(DeleteCourseFromStudentVM data);
+        //Task<Course> GetByIdWithAllDatasAsync(int id);
 
-        
 
     }
 }

@@ -20,11 +20,11 @@
                         <div class="text-center p-4 pb-0">
                             <h3 class="mb-0">$@item.Name</h3>
                             <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
+                                @for (int i = 0; i <item.Rating; i++)
+                                {
+                                    <small class="fa fa-star text-primary"></small>
+                                   
+                                }
                                 <small>(123)</small>
                             </div>
                             <h5 class="mb-4">@item.Price.ToString(item.Price % 1 == 0 ? "0" : "0.00")</h5>
