@@ -46,7 +46,7 @@ namespace Back_End_Final_Education.Services
         public async Task EditAsync(SocialMedia socialMedia, SocialMediaEditVM editSocial)
         {
             socialMedia.Id = editSocial.SocialId;
-            socialMedia.Icon = editSocial.IconClass;
+            socialMedia.Icon = editSocial.IconClass.Trim();
             await _context.SaveChangesAsync();
         }
 

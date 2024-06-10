@@ -60,7 +60,7 @@ namespace Back_End_Final_Education.Areas.Admin.Controllers
                 return View();
             }
 
-            await _socialMediaService.CreateAsync(new SocialMedia { Icon = request.Icon, Name = request.Name });
+            await _socialMediaService.CreateAsync(new SocialMedia { Icon = request.Icon.Trim(), Name = request.Name.Trim() });
 
             return RedirectToAction(nameof(Index));
         }

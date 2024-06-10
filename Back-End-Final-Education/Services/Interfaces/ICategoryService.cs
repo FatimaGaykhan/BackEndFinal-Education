@@ -16,7 +16,7 @@ namespace Back_End_Final_Education.Services.Interfaces
         Task DeleteAsync(Category category);
         Task<bool> ExistExceptByIdAsync(int id, string name);
         Task EditAsync(Category category, CategoryEditVM request);
-
+        Task<IEnumerable<Category>> GetCourses();
 
     }
 }

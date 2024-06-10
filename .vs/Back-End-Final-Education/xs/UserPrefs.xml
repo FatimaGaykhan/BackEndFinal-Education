@@ -8,41 +8,31 @@
       <Breakpoint file="/Users/fatimagaykhanova/Desktop/Back-End-Final-Education/Back-End-Final-Education/Areas/Admin/Controllers/InformationController.cs" relfile="Back-End-Final-Education/Areas/Admin/Controllers/InformationController.cs" line="82" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Back-End-Final-Education/Areas/Admin/Controllers/UserController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Back-End-Final-Education/Views/Shared/Components/Instructor/Default.cshtml">
     <Files>
-      <File FileName="Back-End-Final-Education/Areas/Admin/Controllers/InstructorController.cs" Line="222" Column="10" IsPinned="True" />
-      <File FileName="Back-End-Final-Education/Program.cs" />
-      <File FileName="Back-End-Final-Education/Controllers/AccountController.cs" />
-      <File FileName="Back-End-Final-Education/Views/Account/VerifyEmail.cshtml" />
-      <File FileName="Back-End-Final-Education/Services/Interfaces/IEmailService.cs" />
-      <File FileName="Back-End-Final-Education/Services/EmailService.cs" />
-      <File FileName="Back-End-Final-Education/appsettings.json" />
-      <File FileName="Back-End-Final-Education/appsettings.Development.json" />
-      <File FileName="Back-End-Final-Education/Helpers/EmailSettings.cs" />
-      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Course/Edit.cshtml" />
-      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Course/Create.cshtml" />
-      <File FileName="Back-End-Final-Education/Views/Shared/Components/Course/Default.cshtml" />
-      <File FileName="Back-End-Final-Education/Areas/Admin/Controllers/StudentController.cs" />
-      <File FileName="Back-End-Final-Education/ViewModels/Instructor/InstructorSocialLinkDeleteVM.cs" />
-      <File FileName="Back-End-Final-Education/Services/InstructorService.cs" />
-      <File FileName="Back-End-Final-Education/Services/Interfaces/IInstructorService.cs" />
-      <File FileName="Back-End-Final-Education/Services/Interfaces/IStudentService.cs" />
-      <File FileName="Back-End-Final-Education/Services/StudentService.cs" />
-      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Instructor/Edit.cshtml" />
-      <File FileName="Back-End-Final-Education/ViewModels/Instructor/InstructorEditVM.cs" />
-      <File FileName="Back-End-Final-Education/ViewModels/Instructor/InstructorSocialMediaLinkVM.cs" />
-      <File FileName="Back-End-Final-Education/ViewModels/Students/StudentCourseVM.cs" />
-      <File FileName="Back-End-Final-Education/ViewModels/Students/StudentEditVM.cs" />
-      <File FileName="Back-End-Final-Education/Services/Interfaces/ICourseService.cs" />
-      <File FileName="Back-End-Final-Education/Services/CourseService.cs" />
-      <File FileName="Back-End-Final-Education/Models/Student.cs" />
-      <File FileName="Back-End-Final-Education/Areas/Admin/Controllers/DashboardController.cs" />
-      <File FileName="Back-End-Final-Education/Controllers/ErrorController.cs" Line="17" Column="30" />
-      <File FileName="Back-End-Final-Education/Views/Error/AppNotFound.cshtml" />
-      <File FileName="Back-End-Final-Education/Views/Error/AppInternalServer.cshtml" />
-      <File FileName="Back-End-Final-Education/Views/Error/BadRequest.cshtml" />
-      <File FileName="Back-End-Final-Education/Areas/Admin/Controllers/UserController.cs" Line="18" Column="6" />
-      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Controllers/StudentController.cs" Line="205" Column="42" />
+      <File FileName="Back-End-Final-Education/Services/Interfaces/IStudentService.cs" Line="25" Column="21" />
+      <File FileName="Back-End-Final-Education/Services/StudentService.cs" Line="42" Column="98" />
+      <File FileName="Back-End-Final-Education/ViewModels/Students/StudentEditVM.cs" Line="1" Column="1" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Controllers/SocialMediaController.cs" Line="63" Column="123" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Controllers/InstructorController.cs" Line="219" Column="52" />
+      <File FileName="Back-End-Final-Education/ViewModels/Students/StudentCourseVM.cs" Line="12" Column="1" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Student/Edit.cshtml" Line="42" Column="73" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Instructor/Edit.cshtml" Line="33" Column="1" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Course/Edit.cshtml" Line="1" Column="1" />
+      <File FileName="Back-End-Final-Education/Services/Interfaces/IInstructorService.cs" Line="22" Column="14" />
+      <File FileName="Back-End-Final-Education/Services/InstructorService.cs" Line="1" Column="1" />
+      <File FileName="Back-End-Final-Education/wwwroot/admin/assets/js/custom.js" Line="78" Column="34" />
+      <File FileName="Back-End-Final-Education/Views/Shared/Components/Category/Default.cshtml" Line="46" Column="82" />
+      <File FileName="Back-End-Final-Education/ViewComponents/CategoryViewComponent.cs" Line="36" Column="1" />
+      <File FileName="Back-End-Final-Education/Services/CategoryService.cs" Line="51" Column="84" />
+      <File FileName="Back-End-Final-Education/Services/Interfaces/ICategoryService.cs" Line="12" Column="1" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Controllers/CategoryController.cs" Line="1" Column="1" />
+      <File FileName="Back-End-Final-Education/Areas/Admin/Views/Category/Detail.cshtml" Line="1" Column="1" />
+      <File FileName="Back-End-Final-Education/Models/Category.cs" Line="8" Column="51" />
+      <File FileName="Back-End-Final-Education/Services/SocialMediaService.cs" Line="49" Column="59" />
+      <File FileName="Back-End-Final-Education/Views/Shared/Components/Instructor/Default.cshtml" Line="10" Column="59" />
+      <File FileName="Back-End-Final-Education/Views/Shared/Components/Course/Default.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -52,25 +42,44 @@
               <Node name="Dependencies" expanded="True" />
               <Node name="Areas" expanded="True">
                 <Node name="Admin" expanded="True">
-                  <Node name="Controllers" expanded="True">
-                    <Node name="UserController.cs" selected="True" />
-                  </Node>
+                  <Node name="Controllers" expanded="True" />
                   <Node name="Views" expanded="True">
+                    <Node name="Category" expanded="True" />
                     <Node name="Course" expanded="True" />
                     <Node name="Instructor" expanded="True" />
                     <Node name="Shared" expanded="True" />
+                    <Node name="Student" expanded="True" />
                     <Node name="User" expanded="True" />
                   </Node>
                 </Node>
               </Node>
               <Node name="Controllers" expanded="True" />
               <Node name="Helpers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="Interfaces" expanded="True" />
+              </Node>
+              <Node name="ViewComponents" expanded="True" />
+              <Node name="ViewModels" expanded="True">
+                <Node name="Students" expanded="True" />
+              </Node>
               <Node name="Views" expanded="True">
                 <Node name="Account" expanded="True" />
                 <Node name="Error" expanded="True" />
                 <Node name="Shared" expanded="True">
                   <Node name="Components" expanded="True">
+                    <Node name="Category" expanded="True" />
                     <Node name="Course" expanded="True" />
+                    <Node name="Instructor" expanded="True">
+                      <Node name="Default.cshtml" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="admin" expanded="True">
+                  <Node name="assets" expanded="True">
+                    <Node name="js" expanded="True" />
                   </Node>
                 </Node>
               </Node>

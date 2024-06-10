@@ -22,7 +22,7 @@ namespace Back_End_Final_Education.Services.Interfaces
         Task<SelectList> GetAllSelectedByStudentAsync();
         Task AddToCourseAsync(CourseStudent courseStudent);
         Task DeleteCourseAsync(DeleteCourseFromStudentVM data);
-        //Task<Course> GetByIdWithAllDatasAsync(int id);
+        Task<Student> GetByIdWithAllDatasAsync(int id);
 
 
     }

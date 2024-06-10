@@ -39,7 +39,7 @@ namespace Back_End_Final_Education.Services
 
         public async Task DeleteCourseAsync(DeleteCourseFromStudentVM data)
         {
-            var studentcourse = await _context.CourseStudents.FirstOrDefaultAsync(m => m.Id == data.CourseId&& m.StudentId== data.StudentId);
+            var studentcourse = await _context.CourseStudents.FirstOrDefaultAsync(m => m.CourseId == data.CourseId&& m.StudentId== data.StudentId);
 
             _context.Remove(studentcourse);
 
@@ -121,12 +121,15 @@ namespace Back_End_Final_Education.Services
 
         }
 
-        //public async Task<Course> GetByIdWithAllDatasAsync(int id)
-        //{
-        //    return await _context.Students.Where(m => m.Id == id)
-        //                                  .Include(m => m.CourseStudents)
-        //                                  .FirstOrDefaultAsync();                                          .FirstOrDefaultAsync();
-        //}
+        public async Task<Student> GetByIdWithAllDatasAsync(int id)
+        {
+           var result= await _context.Students.Where(m => m.Id == id)
+                                          .Include(m => m.CourseStudents)
+                                          .ThenInclude(m=>m.Course)
+                                          .FirstOrDefaultAsync();
+
+            return result;
+        }
     }
 }
 

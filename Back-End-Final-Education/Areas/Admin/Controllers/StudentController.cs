@@ -109,11 +109,13 @@ namespace Back_End_Final_Education.Areas.Admin.Controllers
             
                 if (id is null) return BadRequest();
 
-                var student = await _studentService.GetByIdAsync((int)id);
+            var student = await _studentService.GetByIdWithAllDatasAsync((int) id);
 
                 if (student is null) return NotFound();
 
-                return View(new StudentEditVM {  FullName=student.FullName, Description = student.Description, Profession= student.Profession, Image = student.Image});
+                
+
+                return View(new StudentEditVM {  FullName=student.FullName, Description = student.Description, Profession= student.Profession, Image = student.Image,StudentCourses=student.CourseStudents.Select(m=>new StudentCourseVM { StudentId=m.StudentId,CourseId=m.CourseId,Course=m.Course.Name}).ToList() });
         }
 
         [HttpPost]
@@ -199,13 +201,13 @@ namespace Back_End_Final_Education.Areas.Admin.Controllers
 
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> DeleteCourse(DeleteCourseFromStudentVM request)
-        //{
-        //    await _studentService.DeleteCourseAsync(request);
+        [HttpPost]
+        public async Task<IActionResult> DeleteCourse(DeleteCourseFromStudentVM request)
+        {
+            await _studentService.DeleteCourseAsync(request);
 
-        //    return Ok();
-        //}
+            return Ok();
+        }
     }
 }
 

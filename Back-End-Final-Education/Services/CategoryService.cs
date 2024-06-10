@@ -48,7 +48,7 @@ namespace Back_End_Final_Education.Services
 
         public async Task<IEnumerable<Category>> GetAllAsync()
         {
-            return await _context.Categories.ToListAsync();
+            return await _context.Categories.Include(m => m.Courses).ToListAsync();
         }
 
         public async Task<IEnumerable<CategoryVM>> GetAllForAdminAsync()
@@ -79,6 +79,11 @@ namespace Back_End_Final_Education.Services
 
             category.Name = request.Name;
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<IEnumerable<Category>> GetCourses()
+        {
+            return await _context.Categories.Include(m => m.Courses).ToListAsync();
         }
     }
 }

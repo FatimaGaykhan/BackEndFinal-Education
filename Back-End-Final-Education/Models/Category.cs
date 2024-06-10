@@ -5,7 +5,7 @@ namespace Back_End_Final_Education.Models
 	{
 		public string Name { get; set; }
 		public string Image { get; set; }
-
+		public IEnumerable<Course> Courses { get; set; }
 
 	}
 }

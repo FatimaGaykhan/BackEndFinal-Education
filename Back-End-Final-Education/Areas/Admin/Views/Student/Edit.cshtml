@@ -1,53 +1,71 @@
 ﻿@model StudentEditVM
-<div class="container">
-    <div class="image">
-        <img src="~/assets/img/@Model.Image" style="width:200px" />
-    </div>
-    <div class="row mt-3">
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-title">Vertical Form</div>
-                    <hr>
-                    <form method="post" asp-action="Edit" enctype="multipart/form-data">
-                        <div class="form-group">
-                            <label for="input-1">FullName</label>
-                            <input asp-for="FullName" class="form-control" id="input-1" maxlength="100" placeholder="FullName...">
-                            <span asp-validation-for="FullName" class="text-danger"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="input-1">Description</label>
-                            <input asp-for="Description" class="form-control" id="input-1" placeholder="Description...">
-                            <span asp-validation-for="Description" class="text-danger"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="input-1">Profession</label>
-                            <input asp-for="Profession" class="form-control" id="input-1" placeholder="Profession...">
-                            <span asp-validation-for="Profession" class="text-danger"></span>
-                        </div>
+<section id="studentEdit">
+    <div class="container">
+        <div class="image">
+            <img src="~/assets/img/@Model.Image" style="width:200px" />
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">Vertical Form</div>
+                        <hr>
+                        <form method="post" asp-action="Edit" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="input-1">FullName</label>
+                                <input asp-for="FullName" class="form-control" id="input-1" maxlength="100" placeholder="FullName...">
+                                <span asp-validation-for="FullName" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="input-1">Description</label>
+                                <input asp-for="Description" class="form-control" id="input-1" placeholder="Description...">
+                                <span asp-validation-for="Description" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="input-1">Profession</label>
+                                <input asp-for="Profession" class="form-control" id="input-1" placeholder="Profession...">
+                                <span asp-validation-for="Profession" class="text-danger"></span>
+                            </div>
 
-                        <div class="form-group">
-                            <label for="input-1">Image</label>
-                            <input asp-for="NewImage" class="form-control" id="input-1" maxlength="100" placeholder="Image ...">
-                            <span asp-validation-for="NewImage" class="text-danger"></span>
-                        </div>
+                            <div class="form-group">
+                                <label for="input-1">Image</label>
+                                <input asp-for="NewImage" class="form-control" id="input-1" maxlength="100" placeholder="Image ...">
+                                <span asp-validation-for="NewImage" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <ul>
+                                    @foreach (var item in Model.StudentCourses)
+                                    {
+                                        <li>
+                                            @item.Course
+                                            <a data-link="@item.Course" data-courseId="@item.CourseId" data-studentId="@item.StudentId" class="btn btn-danger">Delete</a>
+
+                                        </li>
 
 
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-light px-5"> Submit</button>
-                            <a class="btn btn-light px-5" asp-action="Index"> Cancel</a>
+                                    }
+                                </ul>
+                                @*<label for="input-1">SocialMedia</label>
+                                    <select  asp-items="@ViewBag.instructorSocialMedias" class="form-control"></select>*@
+                            </div>
 
-                        </div>
-                    </form>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-light px-5"> Submit</button>
+                                <a class="btn btn-light px-5" asp-action="Index"> Cancel</a>
+
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div><!--End Row-->
-    <!--start overlay-->
-    <div class="overlay toggle-menu"></div>
-    <!--end overlay-->
+        </div><!--End Row-->
+        <!--start overlay-->
+        <div class="overlay toggle-menu"></div>
+        <!--end overlay-->
 
-</div>
+    </div>
+</section>
 
 
 

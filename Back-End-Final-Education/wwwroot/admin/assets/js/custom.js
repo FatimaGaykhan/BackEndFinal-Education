@@ -67,6 +67,26 @@ $(document).on("click", "#instructorEdit .btn-danger", function () {
 })
 
 
+$(document).on("click", "#studentEdit .btn-danger", function () {
+	let studentId = parseInt($(this).attr("data-studentId"));
+	let courseId = parseInt($(this).attr("data-courseId"));
+
+	console.log(studentId)
+	console.log(courseId)
+
+	let li = $(this).closest("li")
+	let data = { studentId, courseId};
+	$.ajax({
+		type: "POST",
+		url: `/admin/student/deletecourse`,
+		data: data,
+		success: function () {
+			li.remove()
+		}
+	})
+})
+
+
 
 
 ////scialmedialinks
