@@ -17,6 +17,11 @@
                         @if (User.Identity.IsAuthenticated)
                         {
                             <a asp-controller="Account" asp-action="LogOut" class="dropdown-item">Log Out</a>
+                            @if (User.IsInRole("SuperAdmin") || User.IsInRole("Admin"))
+                            {
+                                <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Go to Admin</a>
+
+                            }
 
                         }
                         else

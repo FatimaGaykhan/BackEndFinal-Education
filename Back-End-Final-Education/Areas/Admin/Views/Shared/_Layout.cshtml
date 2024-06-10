@@ -28,6 +28,9 @@
     <!-- Custom Style-->
     <link href="~/admin/assets/css/app-style.css" rel="stylesheet" />
     <link href="~/admin/assets/css/edit.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     @RenderSection("Style", required: false)
 
 
@@ -52,6 +55,11 @@
                     <i class="zmdi zmdi-view-dashboard"></i> <span>Dashboard</span>
                 </a>
             </li>
+            <li>
+                <a asp-area="Admin" asp-controller="SocialMedia" asp-action="Index">
+                    <i class="zmdi zmdi-view-dashboard"></i> <span>SocialMedia</span>
+                </a>
+            </li>
 
             <li>
                 <a asp-area="Admin" asp-controller="Slider" asp-action="Index">
@@ -71,6 +79,11 @@
             <li>
                 <a asp-area="Admin" asp-controller="Setting" asp-action="Index">
                     <i class="zmdi zmdi-grid"></i> <span>Setting</span>
+                </a>
+            </li>
+            <li>
+                <a asp-area="Admin" asp-controller="Contact" asp-action="Index">
+                    <i class="zmdi zmdi-grid"></i> <span>Contact</span>
                 </a>
             </li>
             <li>

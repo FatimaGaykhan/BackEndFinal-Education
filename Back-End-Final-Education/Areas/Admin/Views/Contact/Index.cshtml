@@ -1,0 +1,47 @@
+﻿@model IEnumerable<ContactIndexVM>
+
+<div class="container mt-5">
+    <h2 class="text-center">Instructor</h2>
+    <div class="create-operation mb-5">
+        <a asp-action="Create" class=" btn btn-success">
+            <i class="zmdi zmdi-assignment-returned"></i>
+        </a>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Username</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Message</th>
+                    <th scope="col">CreatedDate</th>
+                    <th scope="col">Operations</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Username</td>
+                        <td>@item.Email</td>
+                        <td>@item.Subject</td>
+                        <td>@item.Message</td>
+                        <td>@item.CreateDate</td>
+
+                        <td>
+                            <form class="d-inline" method="post" asp-action="Delete" asp-route-id="@item.Id">
+                                <button type="submit" class="btn btn-danger"><i class="zmdi zmdi-block"></i></button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+

@@ -71,6 +71,11 @@
     <Folder Include="Views\Account\" />
     <Folder Include="ViewModels\Account\" />
     <Folder Include="Helpers\Enums\" />
+    <Folder Include="ViewModels\Users\" />
+    <Folder Include="Areas\Admin\Views\User\" />
+    <Folder Include="Areas\Admin\Views\Contact\" />
+    <Folder Include="ViewModels\SocialMedia\" />
+    <Folder Include="Areas\Admin\Views\SocialMedia\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
@@ -118,6 +123,11 @@
     <None Remove="Views\Account\" />
     <None Remove="ViewModels\Account\" />
     <None Remove="Helpers\Enums\" />
+    <None Remove="ViewModels\Users\" />
+    <None Remove="Areas\Admin\Views\User\" />
+    <None Remove="Areas\Admin\Views\Contact\" />
+    <None Remove="ViewModels\SocialMedia\" />
+    <None Remove="Areas\Admin\Views\SocialMedia\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.31" />

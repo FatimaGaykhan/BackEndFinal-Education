@@ -37,6 +37,9 @@ namespace Back_End_Final_Education.Data
 
         public DbSet<CourseImage> CourseImages { get; set; }
 
+        public DbSet<Contact> Contacts { get; set; }
+
+
 
 
 
@@ -57,6 +60,8 @@ namespace Back_End_Final_Education.Data
             modelBuilder.Entity<SocialMedia>().HasQueryFilter(m => !m.SoftDeleted);
             modelBuilder.Entity<InstructorSocialMedia>().HasQueryFilter(m => !m.SoftDeleted);
             modelBuilder.Entity<Student>().HasQueryFilter(m => !m.SoftDeleted);
+            modelBuilder.Entity<Contact>().HasQueryFilter(m => !m.SoftDeleted);
+
 
 
 
@@ -161,6 +166,7 @@ namespace Back_End_Final_Education.Data
               );
 
 
+ 
 
 
 
